@@ -1,0 +1,15 @@
+﻿병동,건수,비율(%),AKI 비율(%),테스트 건수,평균 SHAP(로그오즈)
+Medical Intensive Care Unit (MICU),2033,18.5,21.0,328,0.202
+Neuro Intermediate,1894,17.2,3.9,283,-0.518
+Medical/Surgical Intensive Care Unit (MICU/SICU),1592,14.5,17.3,212,0.1
+Surgical Intensive Care Unit (SICU),1485,13.5,13.9,229,0.013
+Coronary Care Unit (CCU),1200,10.9,20.8,174,0.167
+Trauma SICU (TSICU),1035,9.4,18.6,154,0.194
+Cardiac Vascular Intensive Care Unit (CVICU),969,8.8,24.1,157,0.189
+Neuro Stepdown,368,3.3,4.3,55,-0.488
+Neuro Surgical Intensive Care Unit (Neuro SICU),347,3.2,11.0,54,-0.098
+Surgery/Vascular/Intermediate,57,0.5,19.3,10,0.024
+PACU,<10,0.1,,<10,
+Intensive Care Unit (ICU),<10,0.1,,<10,
+Medicine,<10,0.0,,<10,
+Surgery/Trauma,<10,0.0,,<10,

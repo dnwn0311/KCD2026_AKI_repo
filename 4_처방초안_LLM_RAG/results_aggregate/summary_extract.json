@@ -1,0 +1,86 @@
+{
+  "mimic_root": "D:\\MIMIC",
+  "admissions": 545848,
+  "labs": {
+    "rows_read": 158374764,
+    "rows_kept": 33829647,
+    "itemid_check": {
+      "potassium:50971": "OK (potassium)",
+      "potassium:50822": "OK (potassium, whole blood)",
+      "sodium:50983": "OK (sodium)",
+      "sodium:50824": "OK (sodium, whole blood)",
+      "chloride:50902": "OK (chloride)",
+      "chloride:50806": "OK (chloride, whole blood)",
+      "bicarbonate:50882": "OK (bicarbonate)",
+      "bun:51006": "OK (urea nitrogen)",
+      "creatinine:50912": "OK (creatinine)",
+      "glucose:50931": "OK (glucose)",
+      "glucose:50809": "OK (glucose)",
+      "magnesium:50960": "OK (magnesium)",
+      "phosphate:50970": "OK (phosphate)",
+      "calcium:50893": "OK (calcium, total)",
+      "hemoglobin:51222": "OK (hemoglobin)",
+      "hemoglobin:50811": "OK (hemoglobin)",
+      "wbc:51301": "OK (white blood cells)",
+      "wbc:51300": "제외 (wbc count)",
+      "platelet:51265": "OK (platelet count)",
+      "lactate:50813": "OK (lactate)",
+      "inr:51237": "OK (inr(pt))"
+    },
+    "by_lab": {
+      "potassium": 2813186,
+      "glucose": 2684998,
+      "sodium": 2678342,
+      "chloride": 2608452,
+      "creatinine": 2518289,
+      "bun": 2498908,
+      "hemoglobin": 2487393,
+      "bicarbonate": 2480273,
+      "platelet": 2390442,
+      "wbc": 2352078,
+      "magnesium": 2329942,
+      "phosphate": 2195674,
+      "calcium": 2190427,
+      "inr": 1169557,
+      "lactate": 431686
+    }
+  },
+  "vitals": {
+    "file": "chartevents.csv-001-013.gz",
+    "rows_read": 432997491,
+    "rows_kept": 54302718,
+    "itemid_check": {
+      "skipped": true
+    },
+    "by_vital": {
+      "resp_rate": 9318606,
+      "heart_rate": 8712108,
+      "spo2": 8536051,
+      "sbp": 8435331,
+      "dbp": 8434748,
+      "map": 8424933,
+      "temp_c": 2440941
+    }
+  },
+  "icu_stays": {
+    "source": "chartevents 첫·마지막 활력징후 기록 (icustays 파일 없음)",
+    "stays": 94346,
+    "admissions_with_icu": 85234,
+    "median_hours": 45.8
+  },
+  "prescriptions": {
+    "rows_read": 20292611,
+    "rows_kept": 15943775,
+    "distinct_drugs": 5891,
+    "distinct_raw_names": 10748,
+    "dose_numeric_rate": 0.923,
+    "linked_dc": 2476908,
+    "linked_change": 1811401,
+    "poe": {
+      "rows_read": 52212109,
+      "dc_orders": 3206861,
+      "change_orders": 1966724
+    }
+  },
+  "minutes": 9.3
+}

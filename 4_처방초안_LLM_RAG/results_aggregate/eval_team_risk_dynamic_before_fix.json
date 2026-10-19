@@ -1,0 +1,276 @@
+{
+  "design": "이동 시점 24,30,36,42,48,54,60,66,72시간, 한 모델로 쌓아 학습 (팀원 전처리 + 추세 특징 + 경과 시간), 분할 환자 단위 일관",
+  "anchors": [
+    24,
+    30,
+    36,
+    42,
+    48,
+    54,
+    60,
+    66,
+    72
+  ],
+  "n_features": 281,
+  "best_iteration": 895,
+  "pooled_test": {
+    "n": 15254,
+    "positives": 3044,
+    "auroc": 0.8089,
+    "auprc": 0.5264,
+    "brier": 0.1295
+  },
+  "pooled_val": {
+    "n": 15282,
+    "positives": 3103,
+    "auroc": 0.8046,
+    "auprc": 0.5242,
+    "brier": 0.1316
+  },
+  "thresholds": {
+    "red_prob": 0.5882,
+    "yellow_prob": 0.3974
+  },
+  "per_anchor_test": {
+    "24": {
+      "n": 2463,
+      "positives": 779,
+      "auroc": 0.7893,
+      "auprc": 0.6253,
+      "brier": 0.1778,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.1486,
+        "sensitivity": 0.3248,
+        "ppv": 0.6913
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.3613,
+        "sensitivity": 0.6496,
+        "ppv": 0.5685
+      },
+      "separate_model_auroc": 0.7882
+    },
+    "30": {
+      "n": 2282,
+      "positives": 587,
+      "auroc": 0.7951,
+      "auprc": 0.5791,
+      "brier": 0.1596,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0955,
+        "sensitivity": 0.2572,
+        "ppv": 0.6927
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.2783,
+        "sensitivity": 0.5741,
+        "ppv": 0.5307
+      },
+      "separate_model_auroc": 0.7914
+    },
+    "36": {
+      "n": 2179,
+      "positives": 450,
+      "auroc": 0.8106,
+      "auprc": 0.5439,
+      "brier": 0.1312,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0473,
+        "sensitivity": 0.1667,
+        "ppv": 0.7282
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.1712,
+        "sensitivity": 0.4556,
+        "ppv": 0.5496
+      },
+      "separate_model_auroc": 0.7987
+    },
+    "42": {
+      "n": 1943,
+      "positives": 344,
+      "auroc": 0.8008,
+      "auprc": 0.4824,
+      "brier": 0.1192,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0129,
+        "sensitivity": 0.0552,
+        "ppv": 0.76
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.088,
+        "sensitivity": 0.2616,
+        "ppv": 0.5263
+      },
+      "separate_model_auroc": 0.7864
+    },
+    "48": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7809,
+      "auprc": 0.4151,
+      "brier": 0.1158,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0097,
+        "sensitivity": 0.0536,
+        "ppv": 0.875
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.0669,
+        "sensitivity": 0.1954,
+        "ppv": 0.4595
+      },
+      "separate_model_auroc": 0.7695
+    },
+    "54": {
+      "n": 1429,
+      "positives": 218,
+      "auroc": 0.8083,
+      "auprc": 0.4516,
+      "brier": 0.1069,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0042,
+        "sensitivity": 0.0275,
+        "ppv": null
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.0511,
+        "sensitivity": 0.1743,
+        "ppv": 0.5205
+      },
+      "separate_model_auroc": 0.8001
+    },
+    "60": {
+      "n": 1251,
+      "positives": 158,
+      "auroc": 0.7844,
+      "auprc": 0.3568,
+      "brier": 0.0969,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0008,
+        "sensitivity": 0.0063,
+        "ppv": null
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.0336,
+        "sensitivity": 0.1266,
+        "ppv": 0.4762
+      },
+      "separate_model_auroc": 0.7739
+    },
+    "66": {
+      "n": 1094,
+      "positives": 130,
+      "auroc": 0.775,
+      "auprc": 0.3094,
+      "brier": 0.0949,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0018,
+        "sensitivity": 0.0077,
+        "ppv": null
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.0293,
+        "sensitivity": 0.1,
+        "ppv": 0.4062
+      },
+      "separate_model_auroc": 0.7646
+    },
+    "72": {
+      "n": 955,
+      "positives": 117,
+      "auroc": 0.8109,
+      "auprc": 0.3928,
+      "brier": 0.0907,
+      "red": {
+        "threshold": 0.5882,
+        "alert_rate": 0.0,
+        "sensitivity": 0.0,
+        "ppv": null
+      },
+      "yellow_or_red": {
+        "threshold": 0.3974,
+        "alert_rate": 0.0262,
+        "sensitivity": 0.1111,
+        "ppv": 0.52
+      },
+      "separate_model_auroc": 0.7845
+    }
+  },
+  "compare_at_48h": {
+    "cases": 1658,
+    "dynamic_model": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7808,
+      "auprc": 0.4005,
+      "brier": 0.1134
+    },
+    "single_time_trend_model": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7696,
+      "auprc": 0.3525,
+      "brier": 0.1166
+    },
+    "dynamic_minus_single_bootstrap": {
+      "auroc_diff_ci95": [
+        -0.0017,
+        0.0246
+      ],
+      "auprc_diff_ci95": [
+        0.0162,
+        0.0788
+      ],
+      "n_boot": 1000
+    }
+  },
+  "episode_level_test": {
+    "red": {
+      "aki_stays": 1219,
+      "aki_stays_alerted_before_onset": 391,
+      "aki_stays_alerted_rate": 0.3208,
+      "lead_time_hours_median": 4.0,
+      "lead_time_hours_q25_q75": [
+        1.6,
+        10.0
+      ],
+      "alerted_at_least_12h_before_onset_rate": 0.0664,
+      "non_aki_stays": 2119,
+      "non_aki_stays_ever_alerted_rate": 0.0496,
+      "non_aki_alert_share_of_anchors": 0.0131
+    },
+    "yellow_or_red": {
+      "aki_stays": 1219,
+      "aki_stays_alerted_before_onset": 778,
+      "aki_stays_alerted_rate": 0.6382,
+      "lead_time_hours_median": 6.5,
+      "lead_time_hours_q25_q75": [
+        2.8,
+        14.2
+      ],
+      "alerted_at_least_12h_before_onset_rate": 0.1936,
+      "non_aki_stays": 2119,
+      "non_aki_stays_ever_alerted_rate": 0.2124,
+      "non_aki_alert_share_of_anchors": 0.0714
+    }
+  },
+  "train_oof_auroc": 0.8033,
+  "minutes": 1.3
+}

@@ -1,0 +1,5 @@
+step,stays,patients,removed
+"all ICU stays",94458,65366,
+"first ICU stay per hospital admission",85242,65366,9216
+"age >= 18",85242,65366,0
+"ICU stay >= 48 h",40746,34348,44496

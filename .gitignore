@@ -1,0 +1,23 @@
+# 환자 단위 자료·모델·원자료는 올리지 않는다
+_work/
+runs/
+data*/
+catboost_info/
+__pycache__/
+_to_delete/
+_이전버전/
+*.parquet
+*.jsonl
+*.csv.gz
+*.zip
+*.bak
+*.pt
+*.safetensors
+*.ckpt
+*.pkl
+*.npy
+*.npz
+.env
+# 환자 점이 찍힌 SHAP beeswarm 그림
+shap_beeswarm*.png
+SHAP_beeswarm*.png

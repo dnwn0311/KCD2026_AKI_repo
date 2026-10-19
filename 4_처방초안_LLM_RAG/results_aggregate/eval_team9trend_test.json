@@ -1,0 +1,91 @@
+{
+  "overall": {
+    "n": 600,
+    "parse_rate": 1.0,
+    "micro_precision": 0.1286,
+    "micro_recall": 0.1995,
+    "micro_f1": 0.1564,
+    "exact_match": 0.2467,
+    "target_recall": null,
+    "target_precision": null,
+    "target_cases": "<10",
+    "by_action": {
+      "신규처방": {
+        "precision": 0.1533,
+        "recall": 0.1587,
+        "f1": 0.1559,
+        "cases_with_label": 190
+      },
+      "감량": {
+        "precision": 0.0279,
+        "recall": 0.3333,
+        "f1": 0.0515,
+        "cases_with_label": 17
+      },
+      "증량": {
+        "precision": 0.5,
+        "recall": 0.0968,
+        "f1": 0.1622,
+        "cases_with_label": 30
+      },
+      "중단": {
+        "precision": 0.2047,
+        "recall": 0.2917,
+        "f1": 0.2405,
+        "cases_with_label": 102
+      }
+    }
+  },
+  "by_scenario": {
+    "aki_risk": {
+      "n": 600,
+      "parse_rate": 1.0,
+      "micro_precision": 0.1286,
+      "micro_recall": 0.1995,
+      "micro_f1": 0.1564,
+      "exact_match": 0.2467,
+      "target_recall": null,
+      "target_precision": null,
+      "target_cases": "<10",
+      "by_action": {
+        "신규처방": {
+          "precision": 0.1533,
+          "recall": 0.1587,
+          "f1": 0.1559,
+          "cases_with_label": 190
+        },
+        "감량": {
+          "precision": 0.0279,
+          "recall": 0.3333,
+          "f1": 0.0515,
+          "cases_with_label": 17
+        },
+        "증량": {
+          "precision": 0.5,
+          "recall": 0.0968,
+          "f1": 0.1622,
+          "cases_with_label": 30
+        },
+        "중단": {
+          "precision": 0.2047,
+          "recall": 0.2917,
+          "f1": 0.2405,
+          "cases_with_label": 102
+        }
+      }
+    }
+  },
+  "items_per_case": 1.088,
+  "tag": "team9trend_test",
+  "split": "test",
+  "tau": {
+    "신규처방": 0.1875,
+    "감량": 0.0625,
+    "증량": 0.3125,
+    "중단": 0.25
+  },
+  "n_samples": 16,
+  "temperature": 1.0,
+  "json_fail_rate": 0.0014,
+  "minutes": 315.9
+}

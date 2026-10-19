@@ -1,0 +1,407 @@
+{
+  "design": "이동 시점 24,30,36,42,48,54,60,66,72시간, 한 모델로 쌓아 학습 (팀원 전처리 + 추세 특징 + 경과 시간), 분할 환자 단위 일관",
+  "anchors": [
+    24,
+    30,
+    36,
+    42,
+    48,
+    54,
+    60,
+    66,
+    72
+  ],
+  "n_features": 281,
+  "best_iteration": 904,
+  "pooled_test": {
+    "n": 15254,
+    "positives": 3044,
+    "auroc": 0.8101,
+    "auprc": 0.5286,
+    "brier": 0.1292
+  },
+  "pooled_val": {
+    "n": 15282,
+    "positives": 3103,
+    "auroc": 0.8053,
+    "auprc": 0.5232,
+    "brier": 0.1317
+  },
+  "thresholds": {
+    "tier_mode": "per_anchor",
+    "pooled_red_prob": 0.57,
+    "pooled_yellow_prob": 0.4323,
+    "red_by_anchor": {
+      "24": 0.7079,
+      "30": 0.6875,
+      "36": 0.57,
+      "42": 0.4794,
+      "48": 0.4794,
+      "54": 0.4323,
+      "60": 0.3784,
+      "66": 0.345,
+      "72": 0.345
+    },
+    "yellow_by_anchor": {
+      "24": 0.57,
+      "30": 0.57,
+      "36": 0.4323,
+      "42": 0.345,
+      "48": 0.2906,
+      "54": 0.2788,
+      "60": 0.2004,
+      "66": 0.2004,
+      "72": 0.2004
+    }
+  },
+  "per_anchor_test": {
+    "24": {
+      "n": 2463,
+      "positives": 779,
+      "auroc": 0.7893,
+      "auprc": 0.6259,
+      "brier": 0.1778,
+      "red": {
+        "threshold": 0.7079,
+        "alert_rate": 0.067,
+        "sensitivity": 0.1528,
+        "ppv": 0.7212
+      },
+      "yellow_or_red": {
+        "threshold": 0.57,
+        "alert_rate": 0.2067,
+        "sensitivity": 0.4236,
+        "ppv": 0.6483
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.2067,
+        "sensitivity": 0.4236,
+        "ppv": 0.6483
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.3707,
+        "sensitivity": 0.6611,
+        "ppv": 0.5641
+      },
+      "separate_model_auroc": 0.7885
+    },
+    "30": {
+      "n": 2282,
+      "positives": 587,
+      "auroc": 0.7959,
+      "auprc": 0.5795,
+      "brier": 0.1595,
+      "red": {
+        "threshold": 0.6875,
+        "alert_rate": 0.0465,
+        "sensitivity": 0.1397,
+        "ppv": 0.7736
+      },
+      "yellow_or_red": {
+        "threshold": 0.57,
+        "alert_rate": 0.1494,
+        "sensitivity": 0.3816,
+        "ppv": 0.6569
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.1494,
+        "sensitivity": 0.3816,
+        "ppv": 0.6569
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.2857,
+        "sensitivity": 0.5945,
+        "ppv": 0.5353
+      },
+      "separate_model_auroc": 0.7915
+    },
+    "36": {
+      "n": 2179,
+      "positives": 450,
+      "auroc": 0.8123,
+      "auprc": 0.5503,
+      "brier": 0.1305,
+      "red": {
+        "threshold": 0.57,
+        "alert_rate": 0.0766,
+        "sensitivity": 0.2578,
+        "ppv": 0.6946
+      },
+      "yellow_or_red": {
+        "threshold": 0.4323,
+        "alert_rate": 0.1808,
+        "sensitivity": 0.4822,
+        "ppv": 0.5508
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.0766,
+        "sensitivity": 0.2578,
+        "ppv": 0.6946
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.1808,
+        "sensitivity": 0.4822,
+        "ppv": 0.5508
+      },
+      "separate_model_auroc": 0.7998
+    },
+    "42": {
+      "n": 1943,
+      "positives": 344,
+      "auroc": 0.8007,
+      "auprc": 0.483,
+      "brier": 0.1193,
+      "red": {
+        "threshold": 0.4794,
+        "alert_rate": 0.0659,
+        "sensitivity": 0.2297,
+        "ppv": 0.6172
+      },
+      "yellow_or_red": {
+        "threshold": 0.345,
+        "alert_rate": 0.1472,
+        "sensitivity": 0.407,
+        "ppv": 0.4895
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.0299,
+        "sensitivity": 0.1366,
+        "ppv": 0.8103
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.0942,
+        "sensitivity": 0.2762,
+        "ppv": 0.5191
+      },
+      "separate_model_auroc": 0.7889
+    },
+    "48": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.784,
+      "auprc": 0.417,
+      "brier": 0.1153,
+      "red": {
+        "threshold": 0.4794,
+        "alert_rate": 0.0549,
+        "sensitivity": 0.1839,
+        "ppv": 0.5275
+      },
+      "yellow_or_red": {
+        "threshold": 0.2906,
+        "alert_rate": 0.1441,
+        "sensitivity": 0.3755,
+        "ppv": 0.41
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.0217,
+        "sensitivity": 0.1034,
+        "ppv": 0.75
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.0742,
+        "sensitivity": 0.2146,
+        "ppv": 0.4553
+      },
+      "separate_model_auroc": 0.7687
+    },
+    "54": {
+      "n": 1429,
+      "positives": 218,
+      "auroc": 0.8113,
+      "auprc": 0.4579,
+      "brier": 0.1061,
+      "red": {
+        "threshold": 0.4323,
+        "alert_rate": 0.0574,
+        "sensitivity": 0.2156,
+        "ppv": 0.5732
+      },
+      "yellow_or_red": {
+        "threshold": 0.2788,
+        "alert_rate": 0.1833,
+        "sensitivity": 0.4954,
+        "ppv": 0.4122
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.014,
+        "sensitivity": 0.078,
+        "ppv": 0.85
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.0574,
+        "sensitivity": 0.2156,
+        "ppv": 0.5732
+      },
+      "separate_model_auroc": 0.8002
+    },
+    "60": {
+      "n": 1251,
+      "positives": 158,
+      "auroc": 0.7882,
+      "auprc": 0.3635,
+      "brier": 0.0961,
+      "red": {
+        "threshold": 0.3784,
+        "alert_rate": 0.06,
+        "sensitivity": 0.2215,
+        "ppv": 0.4667
+      },
+      "yellow_or_red": {
+        "threshold": 0.2004,
+        "alert_rate": 0.203,
+        "sensitivity": 0.5253,
+        "ppv": 0.3268
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.0048,
+        "sensitivity": 0.0253,
+        "ppv": null
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.0336,
+        "sensitivity": 0.1329,
+        "ppv": 0.5
+      },
+      "separate_model_auroc": 0.7738
+    },
+    "66": {
+      "n": 1094,
+      "positives": 130,
+      "auroc": 0.7748,
+      "auprc": 0.316,
+      "brier": 0.0942,
+      "red": {
+        "threshold": 0.345,
+        "alert_rate": 0.0658,
+        "sensitivity": 0.2077,
+        "ppv": 0.375
+      },
+      "yellow_or_red": {
+        "threshold": 0.2004,
+        "alert_rate": 0.1874,
+        "sensitivity": 0.4923,
+        "ppv": 0.3122
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.0037,
+        "sensitivity": 0.0077,
+        "ppv": null
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.0311,
+        "sensitivity": 0.1077,
+        "ppv": 0.4118
+      },
+      "separate_model_auroc": 0.7589
+    },
+    "72": {
+      "n": 955,
+      "positives": 117,
+      "auroc": 0.8089,
+      "auprc": 0.3913,
+      "brier": 0.0905,
+      "red": {
+        "threshold": 0.345,
+        "alert_rate": 0.0649,
+        "sensitivity": 0.2564,
+        "ppv": 0.4839
+      },
+      "yellow_or_red": {
+        "threshold": 0.2004,
+        "alert_rate": 0.2,
+        "sensitivity": 0.547,
+        "ppv": 0.3351
+      },
+      "red_pooled_threshold": {
+        "threshold": 0.57,
+        "alert_rate": 0.0031,
+        "sensitivity": 0.0171,
+        "ppv": null
+      },
+      "yellow_or_red_pooled_threshold": {
+        "threshold": 0.4323,
+        "alert_rate": 0.0335,
+        "sensitivity": 0.1368,
+        "ppv": 0.5
+      },
+      "separate_model_auroc": 0.7913
+    }
+  },
+  "compare_at_48h": {
+    "cases": 1658,
+    "dynamic_model": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7834,
+      "auprc": 0.3972,
+      "brier": 0.1132
+    },
+    "single_time_trend_model": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7702,
+      "auprc": 0.352,
+      "brier": 0.1166
+    },
+    "dynamic_minus_single_bootstrap": {
+      "auroc_diff_ci95": [
+        0.0002,
+        0.027
+      ],
+      "auprc_diff_ci95": [
+        0.0157,
+        0.0738
+      ],
+      "n_boot": 1000
+    }
+  },
+  "episode_level_test": {
+    "red": {
+      "aki_stays": 1219,
+      "aki_stays_alerted_before_onset": 414,
+      "aki_stays_alerted_rate": 0.3396,
+      "lead_time_hours_median": 4.1,
+      "lead_time_hours_q25_q75": [
+        1.6,
+        10.2
+      ],
+      "alerted_at_least_12h_before_onset_rate": 0.0763,
+      "non_aki_stays": 2119,
+      "non_aki_stays_ever_alerted_rate": 0.0793,
+      "non_aki_alert_share_of_anchors": 0.0256
+    },
+    "yellow_or_red": {
+      "aki_stays": 1219,
+      "aki_stays_alerted_before_onset": 785,
+      "aki_stays_alerted_rate": 0.644,
+      "lead_time_hours_median": 6.2,
+      "lead_time_hours_q25_q75": [
+        2.4,
+        15.0
+      ],
+      "alerted_at_least_12h_before_onset_rate": 0.1961,
+      "non_aki_stays": 2119,
+      "non_aki_stays_ever_alerted_rate": 0.2147,
+      "non_aki_alert_share_of_anchors": 0.0988
+    }
+  },
+  "train_oof_auroc": 0.8036,
+  "minutes": 1.1
+}

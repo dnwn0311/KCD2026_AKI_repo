@@ -1,0 +1,11 @@
+# 위험 모델(1_팀위험모델)과 논문 재현(2_논문재현_Qian2021) 공통
+numpy
+pandas
+pyarrow
+scikit-learn
+scipy
+lightgbm==4.7.0      # 확정 모델을 이 버전으로 학습·저장함 (runs/.../config.json 에 기록)
+xgboost              # 알고리즘 비교(compare_models.py), 논문 재현
+duckdb               # 논문 재현 build 단계, patch_drug_flags.py (팀원 전처리 환경 aki_venv 에도 있음)
+matplotlib           # 논문 재현의 히트맵 (없으면 히트맵만 건너뜀)
+torch                # 논문 재현의 CNN (없으면 --skip-cnn)

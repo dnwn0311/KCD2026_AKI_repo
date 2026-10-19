@@ -1,0 +1,101 @@
+﻿동작,약,평가 쌍 수,정답 수,F1,정밀도,재현율,AUROC,정답 비율(%)
+중단,acetazolamide sodium,<10,<10,,,,,
+중단,acyclovir,56,<10,,,,,
+중단,albumin,90,13,0.133,0.081,0.385,0.285,14.4
+중단,apixaban,20,<10,,,,,
+중단,captopril,23,<10,,,,,
+중단,cefepime,217,37,0.272,0.165,0.784,0.462,17.1
+중단,ciprofloxacin,62,13,0.313,0.196,0.769,0.458,21.0
+중단,digoxin,53,<10,,,,,
+중단,enoxaparin,30,<10,,,,,
+중단,enoxaparin sodium,25,<10,,,,,
+중단,famotidine,470,40,0.134,0.089,0.275,0.47,8.5
+중단,fluconazole,23,<10,,,,,
+중단,furosemide,491,23,0.113,0.1,0.13,0.522,4.7
+중단,gabapentin,124,<10,,,,,
+중단,hydrochlorothiazide,17,<10,,,,,
+중단,ibuprofen,14,<10,,,,,
+중단,ketorolac,51,<10,,,,,
+중단,levetiracetam,175,<10,,,,,
+중단,levofloxacin,69,12,0.323,0.2,0.833,0.572,17.4
+중단,lisinopril,75,11,0.214,0.133,0.545,0.369,14.7
+중단,losartan potassium,33,<10,,,,,
+중단,meropenem,46,11,0.407,0.256,1.0,0.39,23.9
+중단,metformin,<10,<10,,,,,
+중단,metolazone,11,<10,,,,,
+중단,morphine sulfate,191,19,0.218,0.134,0.579,0.525,9.9
+중단,morphine sulfate ir,<10,<10,,,,,
+중단,piperacillin-tazobactam,178,30,0.318,0.193,0.9,0.543,16.9
+중단,spironolactone,24,<10,,,,,
+중단,sulfameth trimethoprim ds,31,<10,,,,,
+중단,tacrolimus,19,<10,,,,,
+중단,torsemide,12,<10,,,,,
+중단,valsartan,11,<10,,,,,
+중단,vancomycin,532,103,0.329,0.202,0.893,0.556,19.4
+신규,acetazolamide sodium,1694,<10,,,,,
+신규,acyclovir,1641,<10,,,,,
+신규,albumin,1607,99,0.356,0.307,0.424,0.795,6.2
+신규,apixaban,1677,10,0.0,0.0,0.0,0.666,0.6
+신규,captopril,1674,19,0.276,0.4,0.211,0.702,1.1
+신규,cefepime,1480,71,0.09,0.097,0.085,0.607,4.8
+신규,ciprofloxacin,1635,20,0.125,0.167,0.1,0.507,1.2
+신규,digoxin,1644,18,0.16,0.286,0.111,0.615,1.1
+신규,enoxaparin,1667,10,0.286,0.5,0.2,0.674,0.6
+신규,enoxaparin sodium,1672,<10,,,,,
+신규,famotidine,1227,52,0.232,0.217,0.25,0.604,4.2
+신규,fluconazole,1674,<10,,,,,
+신규,furosemide,1206,253,0.416,0.297,0.696,0.705,21.0
+신규,gabapentin,1573,18,0.24,0.429,0.167,0.508,1.1
+신규,hydrochlorothiazide,1680,<10,,,,,
+신규,ibuprofen,1683,<10,,,,,
+신규,ketorolac,1646,14,0.0,0.0,0.0,0.58,0.9
+신규,levetiracetam,1522,20,0.457,0.533,0.4,0.76,1.3
+신규,levofloxacin,1628,13,0.296,0.286,0.308,0.746,0.8
+신규,lisinopril,1622,32,0.178,0.308,0.125,0.605,2.0
+신규,losartan potassium,1664,<10,,,,,
+신규,meropenem,1651,16,0.345,0.385,0.312,0.685,1.0
+신규,metformin,1692,10,0.154,0.333,0.1,0.702,0.6
+신규,metolazone,1686,15,0.0,0.0,0.0,0.608,0.9
+신규,morphine sulfate,1506,60,0.058,0.051,0.067,0.472,4.0
+신규,morphine sulfate ir,1692,<10,,,,,
+신규,piperacillin-tazobactam,1519,35,0.114,0.114,0.114,0.578,2.3
+신규,spironolactone,1673,<10,,,,,
+신규,sulfameth trimethoprim ds,1666,<10,,,,,
+신규,tacrolimus,1678,<10,,,,,
+신규,tobramycin sulfate,1697,<10,,,,,
+신규,torsemide,1685,11,0.125,0.2,0.091,0.454,0.7
+신규,valsartan,1686,<10,,,,,
+신규,vancomycin,1165,172,0.342,0.243,0.576,0.692,14.8
+증량,acetazolamide sodium,<10,<10,,,,,
+증량,acyclovir,56,<10,,,,,
+증량,albumin,90,<10,,,,,
+증량,apixaban,20,<10,,,,,
+증량,captopril,23,<10,,,,,
+증량,cefepime,217,<10,,,,,
+증량,ciprofloxacin,62,<10,,,,,
+증량,digoxin,53,<10,,,,,
+증량,enoxaparin,30,<10,,,,,
+증량,enoxaparin sodium,25,<10,,,,,
+증량,famotidine,470,<10,,,,,
+증량,fluconazole,23,<10,,,,,
+증량,furosemide,491,20,0.21,0.129,0.55,0.716,4.1
+증량,gabapentin,124,<10,,,,,
+증량,hydrochlorothiazide,17,<10,,,,,
+증량,ibuprofen,14,<10,,,,,
+증량,ketorolac,51,<10,,,,,
+증량,levetiracetam,175,<10,,,,,
+증량,levofloxacin,69,<10,,,,,
+증량,lisinopril,75,<10,,,,,
+증량,losartan potassium,33,<10,,,,,
+증량,meropenem,46,<10,,,,,
+증량,metformin,<10,<10,,,,,
+증량,metolazone,11,<10,,,,,
+증량,morphine sulfate,191,<10,,,,,
+증량,morphine sulfate ir,<10,<10,,,,,
+증량,piperacillin-tazobactam,178,<10,,,,,
+증량,spironolactone,24,<10,,,,,
+증량,sulfameth trimethoprim ds,31,<10,,,,,
+증량,tacrolimus,19,<10,,,,,
+증량,torsemide,12,<10,,,,,
+증량,valsartan,11,<10,,,,,
+증량,vancomycin,532,27,0.142,0.086,0.407,0.652,5.1

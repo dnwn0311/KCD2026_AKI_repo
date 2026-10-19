@@ -1,0 +1,11 @@
+﻿병동,시험 건수,평균 SHAP(로그오즈)
+Cardiac Vascular Intensive Care Unit (CVICU),157.0,0.177
+Medical Intensive Care Unit (MICU),328.0,0.177
+Coronary Care Unit (CCU),174.0,0.141
+Trauma SICU (TSICU),154.0,0.13
+Medical/Surgical Intensive Care Unit (MICU/SICU),212.0,0.066
+Surgical Intensive Care Unit (SICU),229.0,-0.015
+Surgery/Vascular/Intermediate,10.0,-0.044
+Neuro Surgical Intensive Care Unit (Neuro SICU),54.0,-0.124
+Neuro Stepdown,55.0,-0.409
+Neuro Intermediate,283.0,-0.412

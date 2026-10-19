@@ -1,0 +1,269 @@
+{
+  "cohort": "이동 창: 입실 48시간부터 24시간마다, 직전 48시간 데이터로 이후 24시간 안 새 AKI (KDIGO 크레아티닌)",
+  "test_by_icu_day": {
+    "3일차": {
+      "n": 2443,
+      "positives": 178,
+      "auroc": 0.8055,
+      "auprc": 0.4006,
+      "brier": 0.0559
+    },
+    "4~5일차": {
+      "n": 2320,
+      "positives": 150,
+      "auroc": 0.7905,
+      "auprc": 0.2762,
+      "brier": 0.0543
+    },
+    "6~8일차": {
+      "n": 1437,
+      "positives": 85,
+      "auroc": 0.8082,
+      "auprc": 0.2572,
+      "brier": 0.0503
+    },
+    "9일차 이후": {
+      "n": 1095,
+      "positives": 54,
+      "auroc": 0.7872,
+      "auprc": 0.2275,
+      "brier": 0.0461
+    }
+  },
+  "n_features": 124,
+  "split_sizes": {
+    "train": 61825,
+    "val": 7684,
+    "test": 7295
+  },
+  "split_stays": {
+    "train": 20562,
+    "val": 2631,
+    "test": 2482
+  },
+  "positive_rate": {
+    "train": 0.0665,
+    "val": 0.07,
+    "test": 0.064
+  },
+  "test": {
+    "lightgbm": {
+      "n": 7295,
+      "positives": 467,
+      "auroc": 0.797,
+      "auprc": 0.3125,
+      "brier": 0.0528
+    },
+    "lightgbm_calibrated": {
+      "n": 7295,
+      "positives": 467,
+      "auroc": 0.7953,
+      "auprc": 0.2891,
+      "brier": 0.0518
+    },
+    "logistic_regression": {
+      "n": 7295,
+      "positives": 467,
+      "auroc": 0.7528,
+      "auprc": 0.2151,
+      "brier": 0.058
+    },
+    "creatinine_ratio_rule": {
+      "n": 7295,
+      "positives": 467,
+      "auroc": 0.6358,
+      "auprc": 0.114,
+      "brier": null
+    }
+  },
+  "val_lightgbm": {
+    "n": 7684,
+    "positives": 538,
+    "auroc": 0.8038,
+    "auprc": 0.2909,
+    "brier": 0.0581
+  },
+  "calibration_test": [
+    {
+      "bin": 1,
+      "n": 253,
+      "mean_pred": 0.0,
+      "observed": 0.0
+    },
+    {
+      "bin": 2,
+      "n": 2081,
+      "mean_pred": 0.0098,
+      "observed": 0.0178
+    },
+    {
+      "bin": 3,
+      "n": 1871,
+      "mean_pred": 0.0299,
+      "observed": 0.0289
+    },
+    {
+      "bin": 4,
+      "n": 1435,
+      "mean_pred": 0.0605,
+      "observed": 0.0481
+    },
+    {
+      "bin": 5,
+      "n": 858,
+      "mean_pred": 0.1335,
+      "observed": 0.1061
+    },
+    {
+      "bin": 6,
+      "n": 797,
+      "mean_pred": 0.2596,
+      "observed": 0.271
+    }
+  ],
+  "traffic_light": {
+    "rule": "val 위험 상위 5% = 빨강, 상위 15% = 노랑 이상 (보정 확률 기준값)",
+    "red_threshold": 0.2339,
+    "yellow_threshold": 0.1472,
+    "test": {
+      "red": {
+        "threshold": 0.2339,
+        "alert_rate": 0.0551,
+        "sensitivity": 0.3062,
+        "ppv": 0.3557
+      },
+      "yellow_or_red": {
+        "threshold": 0.1472,
+        "alert_rate": 0.1581,
+        "sensitivity": 0.5675,
+        "ppv": 0.2298
+      }
+    }
+  },
+  "top_features_mean_abs_shap": [
+    [
+      "cr_base7d",
+      0.2156
+    ],
+    [
+      "cr_last_minus_min48h",
+      0.1684
+    ],
+    [
+      "vit_sbp_last",
+      0.1354
+    ],
+    [
+      "cr_last_minus_base",
+      0.1314
+    ],
+    [
+      "lab_creatinine_mean",
+      0.1095
+    ],
+    [
+      "med_started_이뇨·수액",
+      0.1037
+    ],
+    [
+      "cr_last_over_base",
+      0.102
+    ],
+    [
+      "lab_bicarbonate_last",
+      0.078
+    ],
+    [
+      "lab_phosphate_last",
+      0.0748
+    ],
+    [
+      "vit_heart_rate_last",
+      0.0737
+    ],
+    [
+      "med_active_n",
+      0.0718
+    ],
+    [
+      "vit_dbp_last",
+      0.0616
+    ],
+    [
+      "vit_temp_c_last",
+      0.0605
+    ],
+    [
+      "cr_change48h",
+      0.0502
+    ],
+    [
+      "med_started_n",
+      0.0492
+    ],
+    [
+      "vit_map_mean",
+      0.0457
+    ],
+    [
+      "cr_last",
+      0.0444
+    ],
+    [
+      "med_active_vasopressor",
+      0.0427
+    ],
+    [
+      "vit_spo2_mean",
+      0.0422
+    ],
+    [
+      "med_active_신독성",
+      0.0416
+    ],
+    [
+      "vit_temp_c_mean",
+      0.0411
+    ],
+    [
+      "lab_chloride_min",
+      0.0392
+    ],
+    [
+      "lab_wbc_last",
+      0.038
+    ],
+    [
+      "med_active_이뇨·수액",
+      0.0377
+    ],
+    [
+      "vit_resp_rate_mean",
+      0.0367
+    ]
+  ],
+  "best_iteration": 283,
+  "minutes": 0.1,
+  "llm_input_scores": {
+    "train": "체류 단위 5겹 교차 예측",
+    "val_test": "주 모델",
+    "tier_share": {
+      "train": {
+        "green": 0.8425,
+        "yellow": 0.1012,
+        "red": 0.0564
+      },
+      "val": {
+        "green": 0.827,
+        "yellow": 0.1121,
+        "red": 0.0609
+      },
+      "test": {
+        "green": 0.8419,
+        "yellow": 0.1029,
+        "red": 0.0551
+      }
+    },
+    "train_oof_auroc": 0.796
+  }
+}

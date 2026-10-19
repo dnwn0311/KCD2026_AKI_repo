@@ -1,0 +1,385 @@
+﻿동작,약,순위,특징,mean|SHAP|,해당 약 쌍 수
+중단,cefepime,1,drug,0.25395,217
+중단,cefepime,2,crs_dose_per24,0.07262,217
+중단,cefepime,3,first_careunit,0.06415,217
+중단,cefepime,4,rr_max,0.0565,217
+중단,cefepime,5,hr_max,0.05534,217
+중단,cefepime,6,mbp_max,0.05177,217
+중단,cefepime,7,sbp_min,0.05142,217
+중단,cefepime,8,crs_hrs_on,0.05071,217
+중단,famotidine,1,drug,0.21526,470
+중단,famotidine,2,first_careunit,0.07047,470
+중단,famotidine,3,crs_dose_per24,0.06042,470
+중단,famotidine,4,rr_max,0.05791,470
+중단,famotidine,5,hr_max,0.05768,470
+중단,famotidine,6,mbp_max,0.05297,470
+중단,famotidine,7,drain_ml_total,0.05283,470
+중단,famotidine,8,sbp_min,0.04739,470
+중단,furosemide,1,drug,0.59838,491
+중단,furosemide,2,crs_dose_per24,0.15172,491
+중단,furosemide,3,first_careunit,0.06575,491
+중단,furosemide,4,rr_max,0.05363,491
+중단,furosemide,5,mbp_max,0.05118,491
+중단,furosemide,6,hr_max,0.04868,491
+중단,furosemide,7,tr_mbp_min_12h,0.04828,491
+중단,furosemide,8,crs_n_active_rows,0.04781,491
+중단,levetiracetam,1,drug,0.57943,175
+중단,levetiracetam,2,first_careunit,0.07945,175
+중단,levetiracetam,3,hr_max,0.05728,175
+중단,levetiracetam,4,rr_max,0.05472,175
+중단,levetiracetam,5,mbp_max,0.05381,175
+중단,levetiracetam,6,tr_mbp_min_12h,0.05206,175
+중단,levetiracetam,7,drain_ml_total,0.04874,175
+중단,levetiracetam,8,crs_dose_per24,0.04623,175
+중단,morphine sulfate,1,crs_dose_per24,0.25944,191
+중단,morphine sulfate,2,drug,0.15224,191
+중단,morphine sulfate,3,rr_max,0.06601,191
+중단,morphine sulfate,4,first_careunit,0.06067,191
+중단,morphine sulfate,5,drain_ml_total,0.05221,191
+중단,morphine sulfate,6,mbp_max,0.04973,191
+중단,morphine sulfate,7,hr_max,0.04949,191
+중단,morphine sulfate,8,tr_mbp_min_12h,0.04774,191
+중단,vancomycin,1,drug,0.56201,532
+중단,vancomycin,2,crs_dose_per24,0.07563,532
+중단,vancomycin,3,first_careunit,0.06804,532
+중단,vancomycin,4,rr_max,0.06207,532
+중단,vancomycin,5,hr_max,0.05727,532
+중단,vancomycin,6,drain_ml_total,0.05458,532
+중단,vancomycin,7,sbp_min,0.05413,532
+중단,vancomycin,8,mbp_max,0.05206,532
+중단,piperacillin-tazobactam,1,drug,0.27744,150
+중단,piperacillin-tazobactam,2,crs_dose_per24,0.07815,150
+중단,piperacillin-tazobactam,3,rr_max,0.0748,150
+중단,piperacillin-tazobactam,4,sbp_min,0.06703,150
+중단,piperacillin-tazobactam,5,mbp_max,0.06379,150
+중단,piperacillin-tazobactam,6,first_careunit,0.0592,150
+중단,piperacillin-tazobactam,7,hr_max,0.05835,150
+중단,piperacillin-tazobactam,8,mbp_min,0.05564,150
+신규,acetazolamide sodium,1,drug,0.71405,1694
+신규,acetazolamide sodium,2,first_careunit,0.07459,1694
+신규,acetazolamide sodium,3,tr_hco3_delta_24h,0.05012,1694
+신규,acetazolamide sodium,4,tr_fluid_bal_24h,0.04331,1694
+신규,acetazolamide sodium,5,hr_last,0.03898,1694
+신규,acetazolamide sodium,6,weight_kg,0.03413,1694
+신규,acetazolamide sodium,7,crs_hrs_since_last_stop,0.03347,1694
+신규,acetazolamide sodium,8,phosphate_max,0.03345,1694
+신규,acyclovir,1,drug,0.44974,1641
+신규,acyclovir,2,first_careunit,0.07446,1641
+신규,acyclovir,3,tr_hco3_delta_24h,0.05193,1641
+신규,acyclovir,4,tr_fluid_bal_24h,0.04321,1641
+신규,acyclovir,5,hr_last,0.03946,1641
+신규,acyclovir,6,crs_hrs_since_last_stop,0.0367,1641
+신규,acyclovir,7,weight_kg,0.03508,1641
+신규,acyclovir,8,phosphate_max,0.03289,1641
+신규,albumin,1,drug,1.51826,1607
+신규,albumin,2,crs_hrs_since_last_stop,0.12155,1607
+신규,albumin,3,crs_n_prior_courses,0.08245,1607
+신규,albumin,4,first_careunit,0.08074,1607
+신규,albumin,5,crs_hrs_since_first_use,0.07095,1607
+신규,albumin,6,tr_hco3_delta_24h,0.05548,1607
+신규,albumin,7,tr_fluid_bal_24h,0.0527,1607
+신규,albumin,8,hr_last,0.04244,1607
+신규,apixaban,1,drug,0.39736,1677
+신규,apixaban,2,first_careunit,0.07798,1677
+신규,apixaban,3,tr_hco3_delta_24h,0.05195,1677
+신규,apixaban,4,tr_fluid_bal_24h,0.04448,1677
+신규,apixaban,5,hr_last,0.03891,1677
+신규,apixaban,6,weight_kg,0.03446,1677
+신규,apixaban,7,crs_hrs_since_last_stop,0.03394,1677
+신규,apixaban,8,phosphate_max,0.03311,1677
+신규,captopril,1,drug,0.14486,1674
+신규,captopril,2,first_careunit,0.07944,1674
+신규,captopril,3,tr_hco3_delta_24h,0.05307,1674
+신규,captopril,4,tr_fluid_bal_24h,0.04371,1674
+신규,captopril,5,hr_last,0.04098,1674
+신규,captopril,6,crs_hrs_since_last_stop,0.03577,1674
+신규,captopril,7,weight_kg,0.03462,1674
+신규,captopril,8,phosphate_max,0.03366,1674
+신규,cefepime,1,drug,1.44049,1480
+신규,cefepime,2,first_careunit,0.07925,1480
+신규,cefepime,3,crs_hrs_since_last_stop,0.07688,1480
+신규,cefepime,4,crs_n_prior_courses,0.07026,1480
+신규,cefepime,5,tr_hco3_delta_24h,0.0559,1480
+신규,cefepime,6,crs_hrs_since_first_use,0.05316,1480
+신규,cefepime,7,tr_fluid_bal_24h,0.05093,1480
+신규,cefepime,8,hr_last,0.04431,1480
+신규,ciprofloxacin,1,drug,0.2173,1635
+신규,ciprofloxacin,2,first_careunit,0.07767,1635
+신규,ciprofloxacin,3,tr_hco3_delta_24h,0.05265,1635
+신규,ciprofloxacin,4,crs_n_prior_courses,0.0449,1635
+신규,ciprofloxacin,5,crs_hrs_since_last_stop,0.04298,1635
+신규,ciprofloxacin,6,tr_fluid_bal_24h,0.04223,1635
+신규,ciprofloxacin,7,hr_last,0.04095,1635
+신규,ciprofloxacin,8,weight_kg,0.03521,1635
+신규,digoxin,1,drug,0.16327,1644
+신규,digoxin,2,first_careunit,0.07741,1644
+신규,digoxin,3,tr_hco3_delta_24h,0.05265,1644
+신규,digoxin,4,tr_fluid_bal_24h,0.0449,1644
+신규,digoxin,5,hr_last,0.04197,1644
+신규,digoxin,6,weight_kg,0.03582,1644
+신규,digoxin,7,phosphate_max,0.03448,1644
+신규,digoxin,8,crs_hrs_since_last_stop,0.03291,1644
+신규,enoxaparin,1,drug,0.43728,1667
+신규,enoxaparin,2,first_careunit,0.07674,1667
+신규,enoxaparin,3,tr_hco3_delta_24h,0.05119,1667
+신규,enoxaparin,4,tr_fluid_bal_24h,0.04427,1667
+신규,enoxaparin,5,hr_last,0.0392,1667
+신규,enoxaparin,6,weight_kg,0.03384,1667
+신규,enoxaparin,7,crs_hrs_since_last_stop,0.03367,1667
+신규,enoxaparin,8,phosphate_max,0.03363,1667
+신규,enoxaparin sodium,1,drug,0.452,1672
+신규,enoxaparin sodium,2,first_careunit,0.07568,1672
+신규,enoxaparin sodium,3,tr_hco3_delta_24h,0.05066,1672
+신규,enoxaparin sodium,4,tr_fluid_bal_24h,0.0447,1672
+신규,enoxaparin sodium,5,hr_last,0.03966,1672
+신규,enoxaparin sodium,6,weight_kg,0.03465,1672
+신규,enoxaparin sodium,7,phosphate_max,0.03276,1672
+신규,enoxaparin sodium,8,crs_hrs_since_last_stop,0.03156,1672
+신규,famotidine,1,drug,1.2171,1227
+신규,famotidine,2,crs_hrs_since_last_stop,0.09598,1227
+신규,famotidine,3,first_careunit,0.0822,1227
+신규,famotidine,4,crs_n_prior_courses,0.07871,1227
+신규,famotidine,5,crs_hrs_since_first_use,0.06551,1227
+신규,famotidine,6,tr_hco3_delta_24h,0.05617,1227
+신규,famotidine,7,tr_fluid_bal_24h,0.04985,1227
+신규,famotidine,8,hr_last,0.04121,1227
+신규,fluconazole,1,drug,0.68527,1674
+신규,fluconazole,2,first_careunit,0.07458,1674
+신규,fluconazole,3,tr_hco3_delta_24h,0.0504,1674
+신규,fluconazole,4,tr_fluid_bal_24h,0.04317,1674
+신규,fluconazole,5,hr_last,0.0392,1674
+신규,fluconazole,6,weight_kg,0.03418,1674
+신규,fluconazole,7,crs_hrs_since_last_stop,0.03414,1674
+신규,fluconazole,8,phosphate_max,0.03361,1674
+신규,furosemide,1,drug,2.57036,1206
+신규,furosemide,2,crs_hrs_since_last_stop,0.22768,1206
+신규,furosemide,3,crs_n_prior_courses,0.13706,1206
+신규,furosemide,4,crs_hrs_since_first_use,0.1194,1206
+신규,furosemide,5,first_careunit,0.07531,1206
+신규,furosemide,6,tr_hco3_delta_24h,0.05321,1206
+신규,furosemide,7,tr_fluid_bal_24h,0.05158,1206
+신규,furosemide,8,hr_last,0.04235,1206
+신규,gabapentin,1,drug,0.17928,1573
+신규,gabapentin,2,first_careunit,0.07846,1573
+신규,gabapentin,3,tr_hco3_delta_24h,0.05317,1573
+신규,gabapentin,4,tr_fluid_bal_24h,0.0481,1573
+신규,gabapentin,5,hr_last,0.04061,1573
+신규,gabapentin,6,crs_hrs_since_last_stop,0.03689,1573
+신규,gabapentin,7,weight_kg,0.03467,1573
+신규,gabapentin,8,phosphate_max,0.03325,1573
+신규,hydrochlorothiazide,1,drug,0.68552,1680
+신규,hydrochlorothiazide,2,first_careunit,0.07462,1680
+신규,hydrochlorothiazide,3,tr_hco3_delta_24h,0.0506,1680
+신규,hydrochlorothiazide,4,tr_fluid_bal_24h,0.04341,1680
+신규,hydrochlorothiazide,5,hr_last,0.03905,1680
+신규,hydrochlorothiazide,6,weight_kg,0.0342,1680
+신규,hydrochlorothiazide,7,phosphate_max,0.03297,1680
+신규,hydrochlorothiazide,8,temp_c_min,0.03144,1680
+신규,ibuprofen,1,drug,0.65164,1683
+신규,ibuprofen,2,first_careunit,0.07515,1683
+신규,ibuprofen,3,tr_hco3_delta_24h,0.0507,1683
+신규,ibuprofen,4,tr_fluid_bal_24h,0.04318,1683
+신규,ibuprofen,5,hr_last,0.03928,1683
+신규,ibuprofen,6,weight_kg,0.03454,1683
+신규,ibuprofen,7,phosphate_max,0.03292,1683
+신규,ibuprofen,8,crs_hrs_since_last_stop,0.0323,1683
+신규,ketorolac,1,drug,0.12865,1646
+신규,ketorolac,2,first_careunit,0.07949,1646
+신규,ketorolac,3,tr_hco3_delta_24h,0.05139,1646
+신규,ketorolac,4,tr_fluid_bal_24h,0.04661,1646
+신규,ketorolac,5,hr_last,0.04091,1646
+신규,ketorolac,6,weight_kg,0.0347,1646
+신규,ketorolac,7,crs_hrs_since_last_stop,0.03386,1646
+신규,ketorolac,8,phosphate_max,0.03295,1646
+신규,levetiracetam,1,drug,0.14738,1522
+신규,levetiracetam,2,first_careunit,0.07859,1522
+신규,levetiracetam,3,tr_hco3_delta_24h,0.05398,1522
+신규,levetiracetam,4,crs_hrs_since_last_stop,0.04668,1522
+신규,levetiracetam,5,tr_fluid_bal_24h,0.04641,1522
+신규,levetiracetam,6,hr_last,0.03966,1522
+신규,levetiracetam,7,weight_kg,0.0346,1522
+신규,levetiracetam,8,phosphate_max,0.03328,1522
+신규,levofloxacin,1,drug,0.39534,1628
+신규,levofloxacin,2,first_careunit,0.07589,1628
+신규,levofloxacin,3,crs_hrs_since_last_stop,0.05243,1628
+신규,levofloxacin,4,tr_hco3_delta_24h,0.05171,1628
+신규,levofloxacin,5,crs_n_prior_courses,0.04497,1628
+신규,levofloxacin,6,tr_fluid_bal_24h,0.04313,1628
+신규,levofloxacin,7,hr_last,0.04027,1628
+신규,levofloxacin,8,crs_hrs_since_first_use,0.03722,1628
+신규,lisinopril,1,drug,0.6647,1622
+신규,lisinopril,2,first_careunit,0.08223,1622
+신규,lisinopril,3,tr_hco3_delta_24h,0.05355,1622
+신규,lisinopril,4,crs_n_prior_courses,0.04577,1622
+신규,lisinopril,5,tr_fluid_bal_24h,0.04487,1622
+신규,lisinopril,6,hr_last,0.04128,1622
+신규,lisinopril,7,crs_hrs_since_last_stop,0.04051,1622
+신규,lisinopril,8,crs_hrs_since_first_use,0.0356,1622
+신규,losartan potassium,1,drug,0.62307,1664
+신규,losartan potassium,2,first_careunit,0.07636,1664
+신규,losartan potassium,3,tr_hco3_delta_24h,0.0506,1664
+신규,losartan potassium,4,tr_fluid_bal_24h,0.04359,1664
+신규,losartan potassium,5,hr_last,0.039,1664
+신규,losartan potassium,6,weight_kg,0.03412,1664
+신규,losartan potassium,7,phosphate_max,0.03338,1664
+신규,losartan potassium,8,crs_hrs_since_last_stop,0.03172,1664
+신규,meropenem,1,drug,0.11609,1651
+신규,meropenem,2,first_careunit,0.07601,1651
+신규,meropenem,3,tr_hco3_delta_24h,0.05337,1651
+신규,meropenem,4,tr_fluid_bal_24h,0.04433,1651
+신규,meropenem,5,crs_hrs_since_last_stop,0.04115,1651
+신규,meropenem,6,hr_last,0.04102,1651
+신규,meropenem,7,weight_kg,0.0355,1651
+신규,meropenem,8,phosphate_max,0.03422,1651
+신규,metformin,1,drug,0.37859,1692
+신규,metformin,2,first_careunit,0.07813,1692
+신규,metformin,3,tr_hco3_delta_24h,0.05278,1692
+신규,metformin,4,tr_fluid_bal_24h,0.04406,1692
+신규,metformin,5,hr_last,0.03906,1692
+신규,metformin,6,weight_kg,0.03472,1692
+신규,metformin,7,phosphate_max,0.03324,1692
+신규,metformin,8,temp_c_min,0.0325,1692
+신규,metolazone,1,drug,0.10419,1686
+신규,metolazone,2,first_careunit,0.0787,1686
+신규,metolazone,3,tr_hco3_delta_24h,0.05101,1686
+신규,metolazone,4,tr_fluid_bal_24h,0.04451,1686
+신규,metolazone,5,hr_last,0.04096,1686
+신규,metolazone,6,weight_kg,0.03591,1686
+신규,metolazone,7,phosphate_max,0.03375,1686
+신규,metolazone,8,crs_hrs_since_last_stop,0.03303,1686
+신규,morphine sulfate,1,drug,1.12119,1506
+신규,morphine sulfate,2,crs_hrs_since_last_stop,0.12124,1506
+신규,morphine sulfate,3,crs_n_prior_courses,0.09867,1506
+신규,morphine sulfate,4,crs_hrs_since_first_use,0.07683,1506
+신규,morphine sulfate,5,first_careunit,0.07387,1506
+신규,morphine sulfate,6,tr_hco3_delta_24h,0.05461,1506
+신규,morphine sulfate,7,tr_fluid_bal_24h,0.04461,1506
+신규,morphine sulfate,8,hr_last,0.04341,1506
+신규,morphine sulfate ir,1,drug,0.71496,1692
+신규,morphine sulfate ir,2,first_careunit,0.07466,1692
+신규,morphine sulfate ir,3,tr_hco3_delta_24h,0.05011,1692
+신규,morphine sulfate ir,4,tr_fluid_bal_24h,0.04335,1692
+신규,morphine sulfate ir,5,hr_last,0.03902,1692
+신규,morphine sulfate ir,6,weight_kg,0.0341,1692
+신규,morphine sulfate ir,7,phosphate_max,0.03342,1692
+신규,morphine sulfate ir,8,temp_c_min,0.02998,1692
+신규,piperacillin-tazobactam,1,drug,0.64826,1519
+신규,piperacillin-tazobactam,2,first_careunit,0.07732,1519
+신규,piperacillin-tazobactam,3,crs_hrs_since_last_stop,0.0773,1519
+신규,piperacillin-tazobactam,4,crs_n_prior_courses,0.06896,1519
+신규,piperacillin-tazobactam,5,crs_hrs_since_first_use,0.05613,1519
+신규,piperacillin-tazobactam,6,tr_hco3_delta_24h,0.05335,1519
+신규,piperacillin-tazobactam,7,tr_fluid_bal_24h,0.04587,1519
+신규,piperacillin-tazobactam,8,hr_last,0.04372,1519
+신규,spironolactone,1,drug,0.43243,1673
+신규,spironolactone,2,first_careunit,0.07799,1673
+신규,spironolactone,3,tr_hco3_delta_24h,0.05141,1673
+신규,spironolactone,4,tr_fluid_bal_24h,0.0431,1673
+신규,spironolactone,5,hr_last,0.04015,1673
+신규,spironolactone,6,weight_kg,0.03448,1673
+신규,spironolactone,7,crs_hrs_since_last_stop,0.03305,1673
+신규,spironolactone,8,phosphate_max,0.03258,1673
+신규,sulfameth trimethoprim ds,1,drug,0.6548,1666
+신규,sulfameth trimethoprim ds,2,first_careunit,0.07463,1666
+신규,sulfameth trimethoprim ds,3,tr_hco3_delta_24h,0.05058,1666
+신규,sulfameth trimethoprim ds,4,tr_fluid_bal_24h,0.04381,1666
+신규,sulfameth trimethoprim ds,5,hr_last,0.03928,1666
+신규,sulfameth trimethoprim ds,6,weight_kg,0.03552,1666
+신규,sulfameth trimethoprim ds,7,phosphate_max,0.03299,1666
+신규,sulfameth trimethoprim ds,8,temp_c_min,0.03066,1666
+신규,tacrolimus,1,drug,0.71295,1678
+신규,tacrolimus,2,first_careunit,0.07468,1678
+신규,tacrolimus,3,tr_hco3_delta_24h,0.05031,1678
+신규,tacrolimus,4,tr_fluid_bal_24h,0.04367,1678
+신규,tacrolimus,5,hr_last,0.03912,1678
+신규,tacrolimus,6,weight_kg,0.03409,1678
+신규,tacrolimus,7,phosphate_max,0.03348,1678
+신규,tacrolimus,8,temp_c_min,0.02996,1678
+신규,tobramycin sulfate,1,drug,0.71375,1697
+신규,tobramycin sulfate,2,first_careunit,0.07465,1697
+신규,tobramycin sulfate,3,tr_hco3_delta_24h,0.05022,1697
+신규,tobramycin sulfate,4,tr_fluid_bal_24h,0.04347,1697
+신규,tobramycin sulfate,5,hr_last,0.03896,1697
+신규,tobramycin sulfate,6,weight_kg,0.03406,1697
+신규,tobramycin sulfate,7,phosphate_max,0.03346,1697
+신규,tobramycin sulfate,8,temp_c_min,0.03001,1697
+신규,torsemide,1,drug,0.34074,1685
+신규,torsemide,2,first_careunit,0.07622,1685
+신규,torsemide,3,tr_hco3_delta_24h,0.05047,1685
+신규,torsemide,4,tr_fluid_bal_24h,0.04322,1685
+신규,torsemide,5,hr_last,0.04054,1685
+신규,torsemide,6,weight_kg,0.03541,1685
+신규,torsemide,7,phosphate_max,0.03335,1685
+신규,torsemide,8,crs_hrs_since_last_stop,0.03217,1685
+신규,valsartan,1,drug,0.71467,1686
+신규,valsartan,2,first_careunit,0.07461,1686
+신규,valsartan,3,tr_hco3_delta_24h,0.05023,1686
+신규,valsartan,4,tr_fluid_bal_24h,0.04343,1686
+신규,valsartan,5,hr_last,0.0385,1686
+신규,valsartan,6,weight_kg,0.03404,1686
+신규,valsartan,7,phosphate_max,0.03347,1686
+신규,valsartan,8,temp_c_min,0.02994,1686
+신규,vancomycin,1,drug,2.25217,1165
+신규,vancomycin,2,crs_hrs_since_last_stop,0.23289,1165
+신규,vancomycin,3,crs_n_prior_courses,0.14923,1165
+신규,vancomycin,4,crs_hrs_since_first_use,0.1216,1165
+신규,vancomycin,5,first_careunit,0.07606,1165
+신규,vancomycin,6,tr_fluid_bal_24h,0.05689,1165
+신규,vancomycin,7,tr_hco3_delta_24h,0.05499,1165
+신규,vancomycin,8,hr_last,0.04555,1165
+증량,cefepime,1,drug,0.2579,217
+증량,cefepime,2,crs_hrs_on,0.12787,217
+증량,cefepime,3,tr_uo_rate_24h,0.10943,217
+증량,cefepime,4,tr_uo_rate_12h,0.10235,217
+증량,cefepime,5,crs_hrs_since_last_stop,0.09003,217
+증량,cefepime,6,tr_uo_trend_12h,0.08614,217
+증량,cefepime,7,urine_ml_n_hours_obs,0.0841,217
+증량,cefepime,8,urine_ml_total,0.07792,217
+증량,famotidine,1,drug,0.55142,470
+증량,famotidine,2,crs_hrs_on,0.18727,470
+증량,famotidine,3,tr_uo_rate_12h,0.09529,470
+증량,famotidine,4,crs_hrs_since_last_stop,0.09225,470
+증량,famotidine,5,tr_uo_rate_24h,0.0902,470
+증량,famotidine,6,mg_max,0.07651,470
+증량,famotidine,7,urine_ml_n_hours_obs,0.07421,470
+증량,famotidine,8,tr_uo_trend_12h,0.07105,470
+증량,furosemide,1,drug,0.34716,491
+증량,furosemide,2,crs_hrs_on,0.17354,491
+증량,furosemide,3,crs_hrs_since_last_stop,0.13137,491
+증량,furosemide,4,tr_uo_rate_12h,0.10354,491
+증량,furosemide,5,crs_hrs_since_first_use,0.09893,491
+증량,furosemide,6,urine_ml_n_hours_obs,0.09615,491
+증량,furosemide,7,sbp_last,0.08801,491
+증량,furosemide,8,tr_uo_rate_24h,0.08286,491
+증량,levetiracetam,1,drug,0.39292,175
+증량,levetiracetam,2,crs_hrs_on,0.20492,175
+증량,levetiracetam,3,tr_uo_rate_24h,0.11031,175
+증량,levetiracetam,4,tr_uo_rate_12h,0.10112,175
+증량,levetiracetam,5,crs_hrs_since_last_stop,0.09712,175
+증량,levetiracetam,6,tr_uo_trend_12h,0.08986,175
+증량,levetiracetam,7,na_mean,0.08323,175
+증량,levetiracetam,8,urine_ml_n_hours_obs,0.08155,175
+증량,morphine sulfate,1,drug,0.42537,191
+증량,morphine sulfate,2,crs_hrs_on,0.22051,191
+증량,morphine sulfate,3,crs_hrs_since_last_stop,0.09944,191
+증량,morphine sulfate,4,tr_uo_rate_12h,0.09645,191
+증량,morphine sulfate,5,tr_uo_rate_24h,0.09139,191
+증량,morphine sulfate,6,sbp_last,0.07347,191
+증량,morphine sulfate,7,urine_ml_n_hours_obs,0.07271,191
+증량,morphine sulfate,8,tr_uo_trend_12h,0.07205,191
+증량,vancomycin,1,drug,0.60337,532
+증량,vancomycin,2,crs_hrs_on,0.17293,532
+증량,vancomycin,3,tr_uo_rate_24h,0.10597,532
+증량,vancomycin,4,tr_uo_rate_12h,0.1039,532
+증량,vancomycin,5,urine_ml_n_hours_obs,0.09792,532
+증량,vancomycin,6,crs_hrs_since_last_stop,0.09555,532
+증량,vancomycin,7,sbp_last,0.09425,532
+증량,vancomycin,8,tr_uo_trend_12h,0.08825,532
+증량,piperacillin-tazobactam,1,crs_hrs_on,0.1505,150
+증량,piperacillin-tazobactam,2,crs_hrs_since_last_stop,0.10879,150
+증량,piperacillin-tazobactam,3,tr_uo_rate_24h,0.09483,150
+증량,piperacillin-tazobactam,4,urine_ml_n_hours_obs,0.09388,150
+증량,piperacillin-tazobactam,5,tr_uo_rate_12h,0.0934,150
+증량,piperacillin-tazobactam,6,sbp_last,0.08846,150
+증량,piperacillin-tazobactam,7,mg_max,0.07965,150
+증량,piperacillin-tazobactam,8,tr_uo_trend_12h,0.07932,150

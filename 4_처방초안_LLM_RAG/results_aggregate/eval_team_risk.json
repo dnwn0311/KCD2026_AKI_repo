@@ -1,0 +1,296 @@
+{
+  "cohort": "팀원 전처리: ICU 입실 48시간 후 한 시점, 이후 24시간 안 첫 AKI (크레아티닌 또는 소변량 KDIGO), 분할 split_random",
+  "n_features": 254,
+  "split_sizes": {
+    "train": 7689,
+    "val": 1653,
+    "test": 1658
+  },
+  "positive_rate": {
+    "train": 0.1578,
+    "val": 0.1567,
+    "test": 0.1574
+  },
+  "test": {
+    "lightgbm": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7482,
+      "auprc": 0.347,
+      "brier": 0.1189
+    },
+    "lightgbm_calibrated": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.747,
+      "auprc": 0.3288,
+      "brier": 0.1194
+    },
+    "logistic_regression": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7447,
+      "auprc": 0.3449,
+      "brier": 0.1192
+    },
+    "creatinine_ratio_rule": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.5715,
+      "auprc": 0.2097,
+      "brier": null
+    },
+    "low_urine_last_rule": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.605,
+      "auprc": 0.2163,
+      "brier": null
+    },
+    "low_urine_overall_rule": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.5525,
+      "auprc": 0.1763,
+      "brier": null
+    }
+  },
+  "val_lightgbm": {
+    "n": 1653,
+    "positives": 259,
+    "auroc": 0.7651,
+    "auprc": 0.3674,
+    "brier": 0.1162
+  },
+  "test_subgroups_lightgbm": {
+    "positive_by_creatinine": {
+      "n": 1511,
+      "positives": 114,
+      "auroc": 0.7182,
+      "auprc": 0.1812,
+      "brier": 0.0742
+    },
+    "positive_by_urine_only": {
+      "n": 1544,
+      "positives": 147,
+      "auroc": 0.7714,
+      "auprc": 0.2544,
+      "brier": 0.0825
+    },
+    "esrd_flagged": {
+      "n": 35,
+      "positives": 13,
+      "auroc": 0.7308,
+      "auprc": 0.5778,
+      "brier": 0.2153
+    },
+    "not_esrd": {
+      "n": 1623,
+      "positives": 248,
+      "auroc": 0.7452,
+      "auprc": 0.3359,
+      "brier": 0.1168
+    }
+  },
+  "calibration_test": [
+    {
+      "bin": 1,
+      "n": 266,
+      "mean_pred": 0.0042,
+      "observed": 0.015
+    },
+    {
+      "bin": 2,
+      "n": 215,
+      "mean_pred": 0.0308,
+      "observed": 0.0512
+    },
+    {
+      "bin": 3,
+      "n": 131,
+      "mean_pred": 0.0791,
+      "observed": 0.0763
+    },
+    {
+      "bin": 4,
+      "n": 97,
+      "mean_pred": 0.0935,
+      "observed": 0.1134
+    },
+    {
+      "bin": 5,
+      "n": 242,
+      "mean_pred": 0.1531,
+      "observed": 0.1529
+    },
+    {
+      "bin": 6,
+      "n": 178,
+      "mean_pred": 0.1689,
+      "observed": 0.1629
+    },
+    {
+      "bin": 7,
+      "n": 162,
+      "mean_pred": 0.1928,
+      "observed": 0.2346
+    },
+    {
+      "bin": 8,
+      "n": 118,
+      "mean_pred": 0.2748,
+      "observed": 0.2203
+    },
+    {
+      "bin": 9,
+      "n": 249,
+      "mean_pred": 0.4245,
+      "observed": 0.3815
+    }
+  ],
+  "traffic_light": {
+    "rule": "val 위험 상위 5% = 빨강, 상위 15% = 노랑 이상",
+    "red_threshold": 0.4259,
+    "yellow_threshold": 0.2734,
+    "test": {
+      "red": {
+        "threshold": 0.4259,
+        "alert_rate": 0.0881,
+        "sensitivity": 0.2414,
+        "ppv": 0.4315
+      },
+      "yellow_or_red": {
+        "threshold": 0.2734,
+        "alert_rate": 0.2214,
+        "sensitivity": 0.4636,
+        "ppv": 0.3297
+      }
+    }
+  },
+  "top_features_mean_abs_shap": [
+    [
+      "urine_ml_kg_h_last",
+      0.2489
+    ],
+    [
+      "first_careunit",
+      0.2123
+    ],
+    [
+      "urine_ml_n_hours_obs",
+      0.1717
+    ],
+    [
+      "n_kidney_relevant_classes",
+      0.0874
+    ],
+    [
+      "mbp_last",
+      0.0786
+    ],
+    [
+      "urine_ml_kg_h_overall",
+      0.0738
+    ],
+    [
+      "weight_kg",
+      0.0647
+    ],
+    [
+      "urine_ml_kg_h_mean",
+      0.0585
+    ],
+    [
+      "atc_C03C_loop_diuretic",
+      0.0504
+    ],
+    [
+      "phosphate_last",
+      0.0495
+    ],
+    [
+      "intake_ml_total",
+      0.043
+    ],
+    [
+      "dbp_last",
+      0.042
+    ],
+    [
+      "urine_ml_kg_h_n_hours_obs",
+      0.0412
+    ],
+    [
+      "egfr_mdrd_last",
+      0.0403
+    ],
+    [
+      "egfr_ckdepi_last",
+      0.0402
+    ],
+    [
+      "temp_c_min",
+      0.0394
+    ],
+    [
+      "egfr_ckdepi_min",
+      0.039
+    ],
+    [
+      "age_at_icu",
+      0.0324
+    ],
+    [
+      "cl_n_hours_obs",
+      0.0291
+    ],
+    [
+      "hr_n_hours_obs",
+      0.0289
+    ],
+    [
+      "k_n_hours_obs",
+      0.0258
+    ],
+    [
+      "atc3_V06D",
+      0.025
+    ],
+    [
+      "hr_last",
+      0.0218
+    ],
+    [
+      "sbp_max",
+      0.0211
+    ],
+    [
+      "fluid_balance_ml",
+      0.0207
+    ]
+  ],
+  "best_iteration": 149,
+  "llm_input_scores": {
+    "train": "환자 단위 5겹 교차 예측",
+    "val_test": "주 모델",
+    "train_oof_auroc": 0.7447,
+    "tier_share": {
+      "train": {
+        "green": 0.7863,
+        "yellow": 0.1301,
+        "red": 0.0836
+      },
+      "val": {
+        "green": 0.7774,
+        "yellow": 0.144,
+        "red": 0.0786
+      },
+      "test": {
+        "green": 0.7786,
+        "yellow": 0.1333,
+        "red": 0.0881
+      }
+    }
+  },
+  "minutes": 0.1
+}

@@ -1,0 +1,182 @@
+{
+ "design": "같은 특징(요약+정적+약물+추세)·같은 분할로 알고리즘 비교",
+ "team_dir": "_work/team_fixed",
+ "seeds": [
+  42,
+  43,
+  44
+ ],
+ "n_test": 1658,
+ "n_positive": 261,
+ "models": {
+  "LightGBM": {
+   "n_seeds": 3,
+   "auroc_mean": 0.7713,
+   "auroc_min": 0.7683,
+   "auroc_max": 0.7754,
+   "auprc_mean": 0.37,
+   "auroc_seed42": 0.7754,
+   "same_alert_rate_seed42": {
+    "5%": {
+     "alerts": 83,
+     "caught": 45,
+     "sensitivity": 0.1724,
+     "ppv": 0.5422
+    },
+    "10%": {
+     "alerts": 166,
+     "caught": 70,
+     "sensitivity": 0.2682,
+     "ppv": 0.4217
+    },
+    "15%": {
+     "alerts": 249,
+     "caught": 94,
+     "sensitivity": 0.3602,
+     "ppv": 0.3775
+    },
+    "20%": {
+     "alerts": 332,
+     "caught": 116,
+     "sensitivity": 0.4444,
+     "ppv": 0.3494
+    }
+   }
+  },
+  "XGBoost": {
+   "n_seeds": 3,
+   "auroc_mean": 0.7681,
+   "auroc_min": 0.7677,
+   "auroc_max": 0.7688,
+   "auprc_mean": 0.3721,
+   "auroc_seed42": 0.7688,
+   "same_alert_rate_seed42": {
+    "5%": {
+     "alerts": 83,
+     "caught": 43,
+     "sensitivity": 0.1648,
+     "ppv": 0.5181
+    },
+    "10%": {
+     "alerts": 166,
+     "caught": 69,
+     "sensitivity": 0.2644,
+     "ppv": 0.4157
+    },
+    "15%": {
+     "alerts": 249,
+     "caught": 94,
+     "sensitivity": 0.3602,
+     "ppv": 0.3775
+    },
+    "20%": {
+     "alerts": 332,
+     "caught": 117,
+     "sensitivity": 0.4483,
+     "ppv": 0.3524
+    }
+   },
+   "minus_lightgbm_bootstrap": {
+    "auroc_diff_ci95": [
+     -0.0153,
+     0.0012
+    ],
+    "auprc_diff_ci95": [
+     -0.0118,
+     0.0195
+    ],
+    "n_boot": 1000
+   }
+  },
+  "RandomForest": {
+   "n_seeds": 3,
+   "auroc_mean": 0.7575,
+   "auroc_min": 0.7571,
+   "auroc_max": 0.758,
+   "auprc_mean": 0.3589,
+   "auroc_seed42": 0.758,
+   "same_alert_rate_seed42": {
+    "5%": {
+     "alerts": 83,
+     "caught": 42,
+     "sensitivity": 0.1609,
+     "ppv": 0.506
+    },
+    "10%": {
+     "alerts": 166,
+     "caught": 68,
+     "sensitivity": 0.2605,
+     "ppv": 0.4096
+    },
+    "15%": {
+     "alerts": 249,
+     "caught": 92,
+     "sensitivity": 0.3525,
+     "ppv": 0.3695
+    },
+    "20%": {
+     "alerts": 332,
+     "caught": 116,
+     "sensitivity": 0.4444,
+     "ppv": 0.3494
+    }
+   },
+   "minus_lightgbm_bootstrap": {
+    "auroc_diff_ci95": [
+     -0.0291,
+     -0.0055
+    ],
+    "auprc_diff_ci95": [
+     -0.0367,
+     0.0146
+    ],
+    "n_boot": 1000
+   }
+  },
+  "LogisticRegression": {
+   "n_seeds": 1,
+   "auroc_mean": 0.7517,
+   "auroc_min": 0.7517,
+   "auroc_max": 0.7517,
+   "auprc_mean": 0.3741,
+   "auroc_seed42": 0.7517,
+   "same_alert_rate_seed42": {
+    "5%": {
+     "alerts": 83,
+     "caught": 43,
+     "sensitivity": 0.1648,
+     "ppv": 0.5181
+    },
+    "10%": {
+     "alerts": 166,
+     "caught": 73,
+     "sensitivity": 0.2797,
+     "ppv": 0.4398
+    },
+    "15%": {
+     "alerts": 249,
+     "caught": 91,
+     "sensitivity": 0.3487,
+     "ppv": 0.3655
+    },
+    "20%": {
+     "alerts": 332,
+     "caught": 113,
+     "sensitivity": 0.433,
+     "ppv": 0.3404
+    }
+   },
+   "minus_lightgbm_bootstrap": {
+    "auroc_diff_ci95": [
+     -0.0469,
+     0.0005
+    ],
+    "auprc_diff_ci95": [
+     -0.043,
+     0.045
+    ],
+    "n_boot": 1000
+   }
+  }
+ }
+}

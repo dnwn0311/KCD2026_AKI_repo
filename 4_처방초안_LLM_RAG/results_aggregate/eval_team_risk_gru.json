@@ -1,0 +1,226 @@
+{
+  "design": "시간별 표(48시간) GRU + 정적 입력(약물 사용 여부 포함), 팀원 전처리, 분할 split_random",
+  "n_sequence_channels": 78,
+  "n_static": 168,
+  "seeds": 5,
+  "gru": {
+    "test": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7562,
+      "auprc": 0.3904,
+      "brier": 0.1187
+    },
+    "single_seed_test_auroc": [
+      0.7468,
+      0.7477,
+      0.7531,
+      0.7469,
+      0.7542
+    ],
+    "val_best_auroc": [
+      0.7293,
+      0.7409,
+      0.7312,
+      0.7348,
+      0.7383
+    ],
+    "test_subgroups": {
+      "positive_by_creatinine": {
+        "n": 1511,
+        "positives": 114,
+        "auroc": 0.7227,
+        "auprc": 0.2252,
+        "brier": 0.0814
+      },
+      "positive_by_urine_only": {
+        "n": 1544,
+        "positives": 147,
+        "auroc": 0.7821,
+        "auprc": 0.2991,
+        "brier": 0.0859
+      }
+    }
+  },
+  "lightgbm_trend": {
+    "test": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7696,
+      "auprc": 0.3525,
+      "brier": 0.1166
+    }
+  },
+  "ensemble_rank_average": {
+    "test": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.778,
+      "auprc": 0.4035,
+      "brier": 0.2545
+    }
+  },
+  "gru_minus_lightgbm_bootstrap": {
+    "auroc_diff_ci95": [
+      -0.0371,
+      0.0097
+    ],
+    "auprc_diff_ci95": [
+      -0.0041,
+      0.0787
+    ],
+    "n_boot": 1000
+  },
+  "ensemble_minus_lightgbm_bootstrap": {
+    "auroc_diff_ci95": [
+      -0.0038,
+      0.0206
+    ],
+    "auprc_diff_ci95": [
+      0.0248,
+      0.0821
+    ],
+    "n_boot": 1000
+  },
+  "same_alert_rate_test_lightgbm_vs_gru": {
+    "5%": {
+      "alerts": 83,
+      "base": {
+        "caught": 43,
+        "sensitivity": 0.1648,
+        "ppv": 0.5181
+      },
+      "trend": {
+        "caught": 45,
+        "sensitivity": 0.1724,
+        "ppv": 0.5422
+      },
+      "sensitivity_diff_ci95": [
+        -0.024,
+        0.0433
+      ]
+    },
+    "10%": {
+      "alerts": 166,
+      "base": {
+        "caught": 69,
+        "sensitivity": 0.2644,
+        "ppv": 0.4157
+      },
+      "trend": {
+        "caught": 74,
+        "sensitivity": 0.2835,
+        "ppv": 0.4458
+      },
+      "sensitivity_diff_ci95": [
+        -0.0311,
+        0.0551
+      ]
+    },
+    "15%": {
+      "alerts": 249,
+      "base": {
+        "caught": 99,
+        "sensitivity": 0.3793,
+        "ppv": 0.3976
+      },
+      "trend": {
+        "caught": 96,
+        "sensitivity": 0.3678,
+        "ppv": 0.3855
+      },
+      "sensitivity_diff_ci95": [
+        -0.0519,
+        0.0464
+      ]
+    },
+    "20%": {
+      "alerts": 332,
+      "base": {
+        "caught": 117,
+        "sensitivity": 0.4483,
+        "ppv": 0.3524
+      },
+      "trend": {
+        "caught": 112,
+        "sensitivity": 0.4291,
+        "ppv": 0.3373
+      },
+      "sensitivity_diff_ci95": [
+        -0.0742,
+        0.0329
+      ]
+    }
+  },
+  "same_alert_rate_test_lightgbm_vs_ensemble": {
+    "5%": {
+      "alerts": 83,
+      "base": {
+        "caught": 43,
+        "sensitivity": 0.1648,
+        "ppv": 0.5181
+      },
+      "trend": {
+        "caught": 44,
+        "sensitivity": 0.1686,
+        "ppv": 0.5301
+      },
+      "sensitivity_diff_ci95": [
+        -0.0181,
+        0.034
+      ]
+    },
+    "10%": {
+      "alerts": 166,
+      "base": {
+        "caught": 69,
+        "sensitivity": 0.2644,
+        "ppv": 0.4157
+      },
+      "trend": {
+        "caught": 73,
+        "sensitivity": 0.2797,
+        "ppv": 0.4398
+      },
+      "sensitivity_diff_ci95": [
+        -0.0234,
+        0.0427
+      ]
+    },
+    "15%": {
+      "alerts": 249,
+      "base": {
+        "caught": 99,
+        "sensitivity": 0.3793,
+        "ppv": 0.3976
+      },
+      "trend": {
+        "caught": 97,
+        "sensitivity": 0.3716,
+        "ppv": 0.3896
+      },
+      "sensitivity_diff_ci95": [
+        -0.0356,
+        0.0451
+      ]
+    },
+    "20%": {
+      "alerts": 332,
+      "base": {
+        "caught": 117,
+        "sensitivity": 0.4483,
+        "ppv": 0.3524
+      },
+      "trend": {
+        "caught": 124,
+        "sensitivity": 0.4751,
+        "ppv": 0.3735
+      },
+      "sensitivity_diff_ci95": [
+        -0.0245,
+        0.0613
+      ]
+    }
+  },
+  "minutes": 1.4
+}

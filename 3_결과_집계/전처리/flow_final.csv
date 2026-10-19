@@ -1,0 +1,8 @@
+step,stays,patients,removed
+"stage 2 cohort (base + ESRD flag)",40746,34348,
+"weight available",40619,34260,127
+">= 2 creatinine values in [0, 48 h]",39697,33567,922
+"no AKI by time zero",17646,15984,22051
+"outcome observed (event in window or ICU stay covers 24 h)",11136,10332,6510
+"drop non-ESRD stays with dialysis before time zero",11086,10286,50
+"drop negatives with no creatinine / <6 h urine data in window",11000,10211,86

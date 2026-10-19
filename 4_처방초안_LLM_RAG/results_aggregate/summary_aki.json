@@ -1,0 +1,58 @@
+{
+  "definition": {
+    "aki": "KDIGO 크레아티닌: 48시간 내 +0.3 mg/dL 또는 7일 내 최저값의 1.5배",
+    "risk_design": "이동 창: 입실 48시간부터 24시간마다, 직전 48시간 데이터로 이후 24시간 안 새 AKI"
+  },
+  "first_icu_stays_adult": 85155,
+  "risk": {
+    "stays_with_points": 37434,
+    "candidate_points": 153000,
+    "excluded_after_first_aki": 70091,
+    "excluded_no_creatinine_7d": 1012,
+    "excluded_no_creatinine_in_horizon": 5093,
+    "points_per_stay_median": 2.0,
+    "positive_rate_by_icu_day": {
+      "3일차": 0.068,
+      "4일차": 0.0613,
+      "5일차": 0.0665,
+      "6일차": 0.0667,
+      "7일차": 0.072,
+      "8일차": 0.0732,
+      "9일차": 0.0654,
+      "10일차": 0.0698,
+      "11일차": 0.071,
+      "12일차": 0.0755,
+      "13일차": 0.048,
+      "14일차": 0.0558,
+      "15일차": 0.0606,
+      "16일차": 0.0709
+    },
+    "samples": {
+      "train": 61825,
+      "val": 7684,
+      "test": 7295
+    },
+    "positive_rate": {
+      "train": 0.0665,
+      "val": 0.07,
+      "test": 0.064
+    },
+    "stays": {
+      "train": 20562,
+      "val": 2631,
+      "test": 2482
+    },
+    "n_features": 124
+  },
+  "aki_events_after_48h": {
+    "train": 14187,
+    "val": 1934,
+    "test": 1792
+  },
+  "kdigo_stage_of_events": {
+    "3": 3652,
+    "1": 11537,
+    "2": 2724
+  },
+  "minutes": 0.3
+}

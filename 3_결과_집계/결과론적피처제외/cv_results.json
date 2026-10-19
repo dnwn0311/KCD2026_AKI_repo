@@ -1,0 +1,44 @@
+{
+ "A_전체280": {
+  "n_features": 280,
+  "cv_auroc_mean": 0.7689,
+  "cv_auroc_sd": 0.0005,
+  "cv_auprc_mean": 0.389
+ },
+ "B_정의직결제외": {
+  "n_features": 231,
+  "cv_auroc_mean": 0.7156,
+  "cv_auroc_sd": 0.0009,
+  "cv_auprc_mean": 0.2978
+ },
+ "C_엄격제외": {
+  "n_features": 174,
+  "cv_auroc_mean": 0.7069,
+  "cv_auroc_sd": 0.0015,
+  "cv_auprc_mean": 0.2849
+ },
+ "D_B+새특징": {
+  "n_features": 418,
+  "cv_auroc_mean": 0.7169,
+  "cv_auroc_sd": 0.0021,
+  "cv_auprc_mean": 0.3016
+ },
+ "D2_B+새특징(제곱근제외)": {
+  "n_features": 400,
+  "cv_auroc_mean": 0.7165,
+  "cv_auroc_sd": 0.0012,
+  "cv_auprc_mean": 0.3015
+ },
+ "E_C+새특징": {
+  "n_features": 361,
+  "cv_auroc_mean": 0.7102,
+  "cv_auroc_sd": 0.0022,
+  "cv_auprc_mean": 0.2939
+ },
+ "E2_C+새특징(제곱근제외)": {
+  "n_features": 343,
+  "cv_auroc_mean": 0.7104,
+  "cv_auroc_sd": 0.0012,
+  "cv_auprc_mean": 0.2933
+ }
+}

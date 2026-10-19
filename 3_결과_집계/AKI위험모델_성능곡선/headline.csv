@@ -1,0 +1,2 @@
+﻿split,n,AKI,prevalence_pct,AUROC,AUROC_lo,AUROC_hi,AUPRC,AUPRC_lo,AUPRC_hi
+test,1658,261,15.7,0.77,0.743,0.796,0.352,0.305,0.405

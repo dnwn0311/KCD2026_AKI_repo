@@ -1,0 +1,119 @@
+{
+  "overall": {
+    "n": 200,
+    "parse_rate": 1.0,
+    "micro_precision": 0.0,
+    "micro_recall": 0.0,
+    "micro_f1": 0.0,
+    "exact_match": 0.645,
+    "target_recall": null,
+    "target_precision": null,
+    "target_cases": "<10",
+    "by_action": {
+      "신규처방": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "cases_with_label": 48
+      },
+      "감량": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "cases_with_label": "<10"
+      },
+      "증량": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "cases_with_label": "<10"
+      },
+      "중단": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "cases_with_label": 27
+      }
+    }
+  },
+  "by_scenario": {
+    "aki": {
+      "n": 100,
+      "parse_rate": 1.0,
+      "micro_precision": 0.0,
+      "micro_recall": 0.0,
+      "micro_f1": 0.0,
+      "exact_match": 0.51,
+      "target_recall": null,
+      "target_precision": null,
+      "target_cases": "<10",
+      "by_action": {
+        "신규처방": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 32
+        },
+        "감량": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": "<10"
+        },
+        "증량": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": "<10"
+        },
+        "중단": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 20
+        }
+      }
+    },
+    "aki_risk": {
+      "n": 100,
+      "parse_rate": 1.0,
+      "micro_precision": 0.0,
+      "micro_recall": 0.0,
+      "micro_f1": 0.0,
+      "exact_match": 0.78,
+      "target_recall": null,
+      "target_precision": null,
+      "target_cases": "<10",
+      "by_action": {
+        "신규처방": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 16
+        },
+        "감량": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "cases_with_label": 0
+        },
+        "증량": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "cases_with_label": 0
+        },
+        "중단": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": "<10"
+        }
+      }
+    }
+  },
+  "tag": "qlora_quick",
+  "model": "Qwen/Qwen3.5-9B",
+  "adapter": "runs/qlora_aki/adapter",
+  "minutes": 2.5
+}

@@ -1,0 +1,60 @@
+조건: 논문 방식   n_runs=10
+시험세트 AUC 평균: LightGBM 0.811  XGBoost 0.797  LR 0.788
+
+[LightGBM] 상위 15개  (mean|SHAP| 로그오즈 / 기여도% / 순위범위 / 값 상위25% vs 하위25% 평균SHAP / 스피어만)
+   1 urine_output_min   0.567   18.5%  [ 1- 1]  hi -0.796  lo +0.780  rho -0.97
+   2 creatinine_max     0.475   15.5%  [ 2- 2]  hi +0.708  lo -0.616  rho +0.97
+   3 creatinine_min     0.262    8.5%  [ 3- 3]  hi -0.280  lo +0.392  rho -0.89
+   4 potassium_max      0.214    7.0%  [ 4- 4]  hi +0.297  lo -0.262  rho +0.92
+   5 bmi                0.156    5.1%  [ 5- 7]  hi +0.308  lo -0.133  rho +0.75
+   6 glucose_max        0.145    4.7%  [ 5- 6]  hi +0.136  lo -0.195  rho +0.81
+   7 age                0.118    3.8%  [ 7- 8]  hi +0.146  lo -0.195  rho +0.91
+   8 platelet_min       0.113    3.7%  [ 5-10]  hi -0.135  lo +0.184  rho -0.89
+   9 hemoglobin_min     0.101    3.3%  [ 7-11]  hi -0.100  lo +0.143  rho -0.81
+  10 ptt_max            0.100    3.3%  [ 7-12]  hi +0.189  lo -0.139  rho +0.89
+  11 potassium_min      0.081    2.6%  [10-13]  hi -0.115  lo +0.107  rho -0.90
+  12 pt_max             0.081    2.6%  [10-18]  hi +0.119  lo -0.132  rho +0.89
+  13 male               0.065    2.1%  [12-16]  hi +0.057  lo -0.075  rho +0.85
+  14 urine_output_max   0.054    1.8%  [14-18]  hi -0.033  lo +0.067  rho -0.21
+  15 glucose_min        0.053    1.7%  [13-20]  hi -0.069  lo +0.073  rho -0.81
+
+[LightGBM] 측정 항목별(min+max 합산) 기여도%: creatinine 24.0, urine_output 20.2, potassium 9.6, glucose 6.5, bmi 5.1, hemoglobin 4.4, platelet 4.4, ptt 4.0, age 3.8, pt 3.4, bicarbonate 2.6, bun 2.2, calcium 2.2, male 2.1, inr 1.9, wbc 1.9, spo2 1.6
+
+[XGBoost] 상위 15개  (mean|SHAP| 로그오즈 / 기여도% / 순위범위 / 값 상위25% vs 하위25% 평균SHAP / 스피어만)
+   1 creatinine_max     0.666   14.6%  [ 1- 2]  hi +1.056  lo -0.856  rho +0.97
+   2 urine_output_min   0.635   13.9%  [ 1- 2]  hi -0.884  lo +0.875  rho -0.96
+   3 creatinine_min     0.426    9.4%  [ 3- 3]  hi -0.507  lo +0.633  rho -0.92
+   4 potassium_max      0.233    5.1%  [ 4- 4]  hi +0.319  lo -0.291  rho +0.89
+   5 bmi                0.209    4.6%  [ 5- 5]  hi +0.396  lo -0.172  rho +0.70
+   6 age                0.168    3.7%  [ 6- 8]  hi +0.202  lo -0.263  rho +0.84
+   7 glucose_max        0.164    3.6%  [ 6-10]  hi +0.142  lo -0.208  rho +0.72
+   8 pt_max             0.144    3.2%  [ 7-14]  hi +0.168  lo -0.232  rho +0.76
+   9 hemoglobin_min     0.143    3.1%  [ 7-13]  hi -0.129  lo +0.186  rho -0.71
+  10 ptt_max            0.137    3.0%  [ 8-11]  hi +0.219  lo -0.174  rho +0.71
+  11 platelet_min       0.128    2.8%  [ 7-14]  hi -0.104  lo +0.202  rho -0.60
+  12 potassium_min      0.107    2.4%  [10-15]  hi -0.132  lo +0.137  rho -0.77
+  13 urine_output_max   0.105    2.3%  [11-17]  hi -0.021  lo +0.099  rho -0.07
+  14 male               0.100    2.2%  [12-19]  hi +0.084  lo -0.114  rho +0.84
+  15 glucose_min        0.091    2.0%  [13-20]  hi -0.067  lo +0.093  rho -0.49
+
+[XGBoost] 측정 항목별(min+max 합산) 기여도%: creatinine 24.0, urine_output 16.2, potassium 7.5, glucose 5.6, pt 4.9, hemoglobin 4.8, bmi 4.6, ptt 4.6, platelet 4.4, age 3.7, wbc 3.4, bun 3.3, calcium 3.2, bicarbonate 3.1, inr 2.4, male 2.2, spo2 2.2
+
+[LR] 상위 15개  (mean|SHAP| 로그오즈 / 기여도% / 순위범위 / 값 상위25% vs 하위25% 평균SHAP / 스피어만)
+   1 creatinine_max     1.273   21.7%  [ 1- 1]  hi +2.219  lo -1.498  rho +1.00
+   2 creatinine_min     0.952   16.2%  [ 2- 2]  hi -1.723  lo +1.144  rho -1.00
+   3 bun_max            0.529    9.0%  [ 3- 3]  hi -0.995  lo +0.611  rho -1.00
+   4 bun_min            0.475    8.1%  [ 4- 4]  hi +0.885  lo -0.569  rho +1.00
+   5 hemoglobin_min     0.398    6.8%  [ 5- 5]  hi -0.632  lo +0.597  rho -1.00
+   6 hemoglobin_max     0.257    4.4%  [ 6- 8]  hi +0.410  lo -0.396  rho +1.00
+   7 urine_output_min   0.256    4.4%  [ 6- 7]  hi -0.497  lo +0.225  rho -1.00
+   8 potassium_max      0.211    3.6%  [ 6-10]  hi +0.379  lo -0.274  rho +1.00
+   9 bmi                0.180    3.1%  [ 9-13]  hi +0.328  lo -0.272  rho +1.00
+  10 age                0.173    3.0%  [10-12]  hi +0.250  lo -0.292  rho +1.00
+  11 inr_min            0.158    2.7%  [ 8-20]  hi -0.306  lo +0.182  rho -1.00
+  12 pt_min             0.150    2.6%  [ 8-24]  hi +0.296  lo -0.180  rho +1.00
+  13 platelet_min       0.117    2.0%  [ 9-25]  hi -0.208  lo +0.164  rho -1.00
+  14 potassium_min      0.117    2.0%  [11-14]  hi -0.180  lo +0.172  rho -1.00
+  15 male               0.074    1.3%  [12-17]  hi +0.066  lo -0.085  rho +1.00
+
+[LR] 측정 항목별(min+max 합산) 기여도%: creatinine 37.9, bun 17.1, hemoglobin 11.2, potassium 5.6, urine_output 5.3, inr 3.4, pt 3.2, bmi 3.1, platelet 3.0, age 3.0, calcium 1.6, ptt 1.4, male 1.3, wbc 0.9, spo2 0.8, bicarbonate 0.7, glucose 0.6
+

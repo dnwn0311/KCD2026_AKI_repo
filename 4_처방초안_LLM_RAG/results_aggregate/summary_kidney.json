@@ -1,0 +1,16 @@
+{
+  "output_rows": 5182735,
+  "urine_rows": 4147073,
+  "dialysis_sessions": {
+    "CRRT": 5399,
+    "혈액투석": 5131,
+    "복막투석": 792
+  },
+  "intake_rows": 5903781,
+  "stays_with_weight": 84204,
+  "extra_labs": {
+    "uric_acid": 97573,
+    "urine_creat": 72600
+  },
+  "minutes": 2.2
+}

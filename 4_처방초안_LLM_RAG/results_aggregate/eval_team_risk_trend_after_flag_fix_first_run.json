@@ -1,0 +1,339 @@
+{
+  "design": "팀원 전처리(입실 48시간 한 시점, 이후 24시간 첫 AKI) + hourly 에서 만든 추세 특징, 분할 split_random",
+  "trend_features": [
+    "tr_cr_n",
+    "tr_cr_hsl",
+    "tr_cr_delta_24h",
+    "tr_cr_rise_from_min",
+    "tr_cr_ratio_min",
+    "tr_cr_rise_vs_ref",
+    "tr_cr_ratio_baseline",
+    "tr_cr_slope_day",
+    "tr_cr_max_rise",
+    "tr_bun_delta_24h",
+    "tr_bun_cr_ratio",
+    "tr_k_delta_24h",
+    "tr_hco3_delta_24h",
+    "tr_uo_rate_6h",
+    "tr_uo_rate_12h",
+    "tr_uo_rate_24h",
+    "tr_uo_trend_12h",
+    "tr_uo_obs_12h",
+    "tr_uo_low_h_12h",
+    "tr_uo_low_run_end",
+    "tr_mbp_min_12h",
+    "tr_mbp_lt65_h_24h",
+    "tr_intake_24h",
+    "tr_urine_ml_24h",
+    "tr_fluid_bal_24h",
+    "tr_vaso_h_12h"
+  ],
+  "base": {
+    "n_features": 254,
+    "best_iteration": 253,
+    "test_lightgbm": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7544,
+      "auprc": 0.3552,
+      "brier": 0.1183
+    },
+    "test_lightgbm_calibrated": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7529,
+      "auprc": 0.3365,
+      "brier": 0.1189
+    },
+    "test_logistic_regression": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7445,
+      "auprc": 0.3478,
+      "brier": 0.1191
+    },
+    "val_lightgbm": {
+      "n": 1653,
+      "positives": 259,
+      "auroc": 0.7651,
+      "auprc": 0.3575,
+      "brier": 0.1165
+    },
+    "test_subgroups": {
+      "positive_by_creatinine": {
+        "n": 1511,
+        "positives": 114,
+        "auroc": 0.7292,
+        "auprc": 0.1951,
+        "brier": 0.0738
+      },
+      "positive_by_urine_only": {
+        "n": 1544,
+        "positives": 147,
+        "auroc": 0.774,
+        "auprc": 0.2554,
+        "brier": 0.0829
+      }
+    },
+    "traffic_light_test": {
+      "red": {
+        "threshold": 0.4545,
+        "alert_rate": 0.0676,
+        "sensitivity": 0.1954,
+        "ppv": 0.4554
+      },
+      "yellow_or_red": {
+        "threshold": 0.2889,
+        "alert_rate": 0.2081,
+        "sensitivity": 0.4636,
+        "ppv": 0.3507
+      }
+    }
+  },
+  "trend": {
+    "n_features": 280,
+    "best_iteration": 223,
+    "test_lightgbm": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7754,
+      "auprc": 0.3729,
+      "brier": 0.1164
+    },
+    "test_lightgbm_calibrated": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7702,
+      "auprc": 0.352,
+      "brier": 0.1166
+    },
+    "test_logistic_regression": {
+      "n": 1658,
+      "positives": 261,
+      "auroc": 0.7517,
+      "auprc": 0.3741,
+      "brier": 0.118
+    },
+    "val_lightgbm": {
+      "n": 1653,
+      "positives": 259,
+      "auroc": 0.777,
+      "auprc": 0.3976,
+      "brier": 0.1132
+    },
+    "test_subgroups": {
+      "positive_by_creatinine": {
+        "n": 1511,
+        "positives": 114,
+        "auroc": 0.7633,
+        "auprc": 0.2061,
+        "brier": 0.0726
+      },
+      "positive_by_urine_only": {
+        "n": 1544,
+        "positives": 147,
+        "auroc": 0.7847,
+        "auprc": 0.2703,
+        "brier": 0.0817
+      }
+    },
+    "traffic_light_test": {
+      "red": {
+        "threshold": 0.5,
+        "alert_rate": 0.0597,
+        "sensitivity": 0.1954,
+        "ppv": 0.5152
+      },
+      "yellow_or_red": {
+        "threshold": 0.3235,
+        "alert_rate": 0.1556,
+        "sensitivity": 0.3716,
+        "ppv": 0.376
+      }
+    }
+  },
+  "trend_minus_base_bootstrap": {
+    "auroc_diff_ci95": [
+      0.0062,
+      0.0368
+    ],
+    "auprc_diff_ci95": [
+      -0.0085,
+      0.0453
+    ],
+    "n_boot": 1000
+  },
+  "same_alert_rate_test": {
+    "5%": {
+      "alerts": 83,
+      "base": {
+        "caught": 38,
+        "sensitivity": 0.1456,
+        "ppv": 0.4578
+      },
+      "trend": {
+        "caught": 45,
+        "sensitivity": 0.1724,
+        "ppv": 0.5422
+      },
+      "sensitivity_diff_ci95": [
+        -0.0075,
+        0.0534
+      ]
+    },
+    "10%": {
+      "alerts": 166,
+      "base": {
+        "caught": 65,
+        "sensitivity": 0.249,
+        "ppv": 0.3916
+      },
+      "trend": {
+        "caught": 70,
+        "sensitivity": 0.2682,
+        "ppv": 0.4217
+      },
+      "sensitivity_diff_ci95": [
+        -0.0251,
+        0.0438
+      ]
+    },
+    "15%": {
+      "alerts": 249,
+      "base": {
+        "caught": 87,
+        "sensitivity": 0.3333,
+        "ppv": 0.3494
+      },
+      "trend": {
+        "caught": 94,
+        "sensitivity": 0.3602,
+        "ppv": 0.3775
+      },
+      "sensitivity_diff_ci95": [
+        -0.0165,
+        0.0669
+      ]
+    },
+    "20%": {
+      "alerts": 332,
+      "base": {
+        "caught": 116,
+        "sensitivity": 0.4444,
+        "ppv": 0.3494
+      },
+      "trend": {
+        "caught": 116,
+        "sensitivity": 0.4444,
+        "ppv": 0.3494
+      },
+      "sensitivity_diff_ci95": [
+        -0.0345,
+        0.0518
+      ]
+    }
+  },
+  "top_features_trend_model": [
+    [
+      "first_careunit",
+      0.217,
+      false
+    ],
+    [
+      "urine_ml_n_hours_obs",
+      0.1477,
+      false
+    ],
+    [
+      "tr_uo_low_h_12h",
+      0.1389,
+      true
+    ],
+    [
+      "urine_ml_kg_h_last",
+      0.1318,
+      false
+    ],
+    [
+      "tr_uo_rate_6h",
+      0.1166,
+      true
+    ],
+    [
+      "mbp_last",
+      0.0875,
+      false
+    ],
+    [
+      "urine_ml_kg_h_overall",
+      0.064,
+      false
+    ],
+    [
+      "weight_kg",
+      0.0603,
+      false
+    ],
+    [
+      "atc_C03C_loop_diuretic",
+      0.0542,
+      false
+    ],
+    [
+      "dbp_last",
+      0.0535,
+      false
+    ],
+    [
+      "n_kidney_relevant_classes",
+      0.0518,
+      false
+    ],
+    [
+      "tr_cr_rise_from_min",
+      0.0498,
+      true
+    ],
+    [
+      "urine_ml_kg_h_mean",
+      0.048,
+      false
+    ],
+    [
+      "egfr_ckdepi_min",
+      0.0462,
+      false
+    ],
+    [
+      "age_at_icu",
+      0.0434,
+      false
+    ],
+    [
+      "tr_cr_rise_vs_ref",
+      0.0429,
+      true
+    ],
+    [
+      "temp_c_min",
+      0.0425,
+      false
+    ],
+    [
+      "egfr_mdrd_last",
+      0.0421,
+      false
+    ],
+    [
+      "egfr_ckdepi_last",
+      0.0401,
+      false
+    ],
+    [
+      "tr_uo_rate_12h",
+      0.0396,
+      true
+    ]
+  ],
+  "minutes": 0.2
+}

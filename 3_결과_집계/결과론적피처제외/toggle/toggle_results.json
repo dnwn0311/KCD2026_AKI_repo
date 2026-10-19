@@ -1,0 +1,498 @@
+{
+ "S0M0R0": {
+  "Slope": false,
+  "Mean": false,
+  "RMS": false,
+  "n_features": 260,
+  "cv_auroc_lgb": 0.7375,
+  "test_auroc_ens": 0.741,
+  "test_ci": [
+   0.712,
+   0.769
+  ],
+  "test_auprc_ens": 0.323,
+  "test_auroc_lgb": 0.732,
+  "shap_share_by_family": {
+   "slope": 0.0,
+   "mean": 0.0,
+   "rms": 0.0,
+   "기본": 100.0
+  },
+  "top10": [
+   [
+    "first_careunit",
+    11.19
+   ],
+   [
+    "nf4_uo_rel7",
+    5.36
+   ],
+   [
+    "weight_kg",
+    4.71
+   ],
+   [
+    "age_at_icu",
+    3.98
+   ],
+   [
+    "tr_uo_trend_12h",
+    3.94
+   ],
+   [
+    "nf4_uo_max_drop_bin",
+    3.81
+   ],
+   [
+    "tr_cr_rise_from_min",
+    3.29
+   ],
+   [
+    "mbp_last",
+    3.12
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.59
+   ],
+   [
+    "dbp_last",
+    2.57
+   ]
+  ]
+ },
+ "S1M1R1": {
+  "Slope": true,
+  "Mean": true,
+  "RMS": true,
+  "n_features": 368,
+  "cv_auroc_lgb": 0.7476,
+  "test_auroc_ens": 0.753,
+  "test_ci": [
+   0.725,
+   0.779
+  ],
+  "test_auprc_ens": 0.339,
+  "test_auroc_lgb": 0.745,
+  "shap_share_by_family": {
+   "slope": 11.0,
+   "mean": 9.2,
+   "rms": 13.2,
+   "기본": 66.6
+  },
+  "top10": [
+   [
+    "first_careunit",
+    9.52
+   ],
+   [
+    "fam_mean_uo_12h",
+    3.64
+   ],
+   [
+    "weight_kg",
+    3.22
+   ],
+   [
+    "tr_cr_rise_from_min",
+    2.97
+   ],
+   [
+    "fam_rms_uo_rmssd_12h",
+    2.73
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.68
+   ],
+   [
+    "tr_uo_trend_12h",
+    2.56
+   ],
+   [
+    "mbp_last",
+    2.41
+   ],
+   [
+    "age_at_icu",
+    2.37
+   ],
+   [
+    "nf4_uo_rel7",
+    2.37
+   ]
+  ]
+ },
+ "S1M0R0": {
+  "Slope": true,
+  "Mean": false,
+  "RMS": false,
+  "n_features": 287,
+  "cv_auroc_lgb": 0.7406,
+  "test_auroc_ens": 0.746,
+  "test_ci": [
+   0.716,
+   0.774
+  ],
+  "test_auprc_ens": 0.331,
+  "test_auroc_lgb": 0.738,
+  "shap_share_by_family": {
+   "slope": 14.0,
+   "mean": 0.0,
+   "rms": 0.0,
+   "기본": 86.0
+  },
+  "top10": [
+   [
+    "first_careunit",
+    10.49
+   ],
+   [
+    "nf4_uo_rel7",
+    4.9
+   ],
+   [
+    "weight_kg",
+    4.27
+   ],
+   [
+    "age_at_icu",
+    3.56
+   ],
+   [
+    "nf4_uo_max_drop_bin",
+    3.46
+   ],
+   [
+    "tr_uo_trend_12h",
+    3.22
+   ],
+   [
+    "tr_cr_rise_from_min",
+    3.05
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.64
+   ],
+   [
+    "mbp_last",
+    2.46
+   ],
+   [
+    "temp_c_min",
+    2.23
+   ]
+  ]
+ },
+ "S0M1R0": {
+  "Slope": false,
+  "Mean": true,
+  "RMS": false,
+  "n_features": 287,
+  "cv_auroc_lgb": 0.7453,
+  "test_auroc_ens": 0.745,
+  "test_ci": [
+   0.716,
+   0.772
+  ],
+  "test_auprc_ens": 0.331,
+  "test_auroc_lgb": 0.738,
+  "shap_share_by_family": {
+   "slope": 0.0,
+   "mean": 14.7,
+   "rms": 0.0,
+   "기본": 85.3
+  },
+  "top10": [
+   [
+    "first_careunit",
+    10.26
+   ],
+   [
+    "fam_mean_uo_12h",
+    4.26
+   ],
+   [
+    "tr_uo_trend_12h",
+    3.67
+   ],
+   [
+    "weight_kg",
+    3.51
+   ],
+   [
+    "mbp_last",
+    3.21
+   ],
+   [
+    "tr_cr_rise_from_min",
+    3.2
+   ],
+   [
+    "nf4_uo_rel7",
+    2.93
+   ],
+   [
+    "age_at_icu",
+    2.75
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.71
+   ],
+   [
+    "dbp_last",
+    2.54
+   ]
+  ]
+ },
+ "S0M0R1": {
+  "Slope": false,
+  "Mean": false,
+  "RMS": true,
+  "n_features": 314,
+  "cv_auroc_lgb": 0.7432,
+  "test_auroc_ens": 0.743,
+  "test_ci": [
+   0.713,
+   0.771
+  ],
+  "test_auprc_ens": 0.326,
+  "test_auroc_lgb": 0.734,
+  "shap_share_by_family": {
+   "slope": 0.0,
+   "mean": 0.0,
+   "rms": 22.6,
+   "기본": 77.4
+  },
+  "top10": [
+   [
+    "first_careunit",
+    9.87
+   ],
+   [
+    "fam_rms_uo_12h",
+    3.89
+   ],
+   [
+    "weight_kg",
+    3.83
+   ],
+   [
+    "nf4_uo_rel7",
+    3.66
+   ],
+   [
+    "tr_uo_trend_12h",
+    3.18
+   ],
+   [
+    "tr_cr_rise_from_min",
+    3.1
+   ],
+   [
+    "mbp_last",
+    3.1
+   ],
+   [
+    "fam_rms_uo_rmssd_12h",
+    2.94
+   ],
+   [
+    "age_at_icu",
+    2.68
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.64
+   ]
+  ]
+ },
+ "S1M1R0": {
+  "Slope": true,
+  "Mean": true,
+  "RMS": false,
+  "n_features": 314,
+  "cv_auroc_lgb": 0.7473,
+  "test_auroc_ens": 0.753,
+  "test_ci": [
+   0.725,
+   0.779
+  ],
+  "test_auprc_ens": 0.341,
+  "test_auroc_lgb": 0.746,
+  "shap_share_by_family": {
+   "slope": 12.8,
+   "mean": 12.1,
+   "rms": 0.0,
+   "기본": 75.1
+  },
+  "top10": [
+   [
+    "first_careunit",
+    10.04
+   ],
+   [
+    "fam_mean_uo_12h",
+    3.9
+   ],
+   [
+    "weight_kg",
+    3.43
+   ],
+   [
+    "tr_uo_trend_12h",
+    3.32
+   ],
+   [
+    "tr_cr_rise_from_min",
+    3.15
+   ],
+   [
+    "nf4_uo_rel7",
+    2.99
+   ],
+   [
+    "mbp_last",
+    2.67
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.67
+   ],
+   [
+    "age_at_icu",
+    2.41
+   ],
+   [
+    "fam_slope_sbp_24h",
+    2.1
+   ]
+  ]
+ },
+ "S1M0R1": {
+  "Slope": true,
+  "Mean": false,
+  "RMS": true,
+  "n_features": 341,
+  "cv_auroc_lgb": 0.7448,
+  "test_auroc_ens": 0.752,
+  "test_ci": [
+   0.723,
+   0.779
+  ],
+  "test_auprc_ens": 0.339,
+  "test_auroc_lgb": 0.744,
+  "shap_share_by_family": {
+   "slope": 11.3,
+   "mean": 0.0,
+   "rms": 19.6,
+   "기본": 69.1
+  },
+  "top10": [
+   [
+    "first_careunit",
+    9.91
+   ],
+   [
+    "fam_rms_uo_12h",
+    3.73
+   ],
+   [
+    "weight_kg",
+    3.63
+   ],
+   [
+    "nf4_uo_rel7",
+    3.32
+   ],
+   [
+    "tr_cr_rise_from_min",
+    2.94
+   ],
+   [
+    "age_at_icu",
+    2.72
+   ],
+   [
+    "tr_uo_trend_12h",
+    2.66
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.65
+   ],
+   [
+    "fam_rms_uo_rmssd_12h",
+    2.63
+   ],
+   [
+    "fam_rms_uo_48h",
+    2.51
+   ]
+  ]
+ },
+ "S0M1R1": {
+  "Slope": false,
+  "Mean": true,
+  "RMS": true,
+  "n_features": 341,
+  "cv_auroc_lgb": 0.7455,
+  "test_auroc_ens": 0.745,
+  "test_ci": [
+   0.716,
+   0.772
+  ],
+  "test_auprc_ens": 0.329,
+  "test_auroc_lgb": 0.737,
+  "shap_share_by_family": {
+   "slope": 0.0,
+   "mean": 10.0,
+   "rms": 15.1,
+   "기본": 74.9
+  },
+  "top10": [
+   [
+    "first_careunit",
+    9.9
+   ],
+   [
+    "fam_mean_uo_12h",
+    3.78
+   ],
+   [
+    "weight_kg",
+    3.56
+   ],
+   [
+    "tr_cr_rise_from_min",
+    3.13
+   ],
+   [
+    "mbp_last",
+    3.08
+   ],
+   [
+    "fam_rms_uo_rmssd_12h",
+    3.03
+   ],
+   [
+    "nf4_uo_rel7",
+    3.01
+   ],
+   [
+    "tr_uo_trend_12h",
+    2.89
+   ],
+   [
+    "age_at_icu",
+    2.56
+   ],
+   [
+    "n_kidney_relevant_classes",
+    2.54
+   ]
+  ]
+ }
+}

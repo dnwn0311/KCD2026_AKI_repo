@@ -1,0 +1,35 @@
+﻿약,시점 t 에 사용 중(환자),중단(환자),신규(환자),증량(환자),감량(환자)
+acetazolamide sodium,<10,<10,<10,<10,<10
+acyclovir,56,<10,<10,<10,<10
+albumin,90,13,99,<10,<10
+apixaban,20,<10,10,<10,<10
+captopril,23,<10,19,<10,<10
+cefepime,217,37,71,<10,13
+ciprofloxacin,62,13,20,<10,<10
+digoxin,53,<10,18,<10,<10
+enoxaparin,30,<10,10,<10,<10
+enoxaparin sodium,25,<10,<10,<10,<10
+famotidine,470,40,52,<10,<10
+fluconazole,23,<10,<10,<10,<10
+furosemide,491,23,253,20,13
+gabapentin,124,<10,18,<10,<10
+hydrochlorothiazide,17,<10,<10,<10,<10
+ibuprofen,14,<10,<10,<10,<10
+ketorolac,51,<10,14,<10,<10
+levetiracetam,175,<10,20,<10,<10
+levofloxacin,69,12,13,<10,<10
+lisinopril,75,11,32,<10,<10
+losartan potassium,33,<10,<10,<10,<10
+meropenem,46,11,16,<10,<10
+metformin,<10,<10,10,<10,<10
+metolazone,11,<10,15,<10,<10
+morphine sulfate,191,19,60,<10,<10
+morphine sulfate ir,<10,<10,<10,<10,<10
+piperacillin-tazobactam,178,30,35,<10,<10
+spironolactone,24,<10,<10,<10,<10
+sulfameth trimethoprim ds,31,<10,<10,<10,<10
+tacrolimus,19,<10,<10,<10,<10
+tobramycin sulfate,<10,<10,<10,<10,<10
+torsemide,12,<10,11,<10,<10
+valsartan,11,<10,<10,<10,<10
+vancomycin,532,103,172,27,16

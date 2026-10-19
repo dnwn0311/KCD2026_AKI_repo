@@ -1,0 +1,250 @@
+{
+  "freq_rule": {
+    "overall": {
+      "n": 1650,
+      "parse_rate": 1.0,
+      "micro_precision": 0.1312,
+      "micro_recall": 0.1527,
+      "micro_f1": 0.1411,
+      "exact_match": 0.1382,
+      "target_recall": null,
+      "target_precision": null,
+      "target_cases": "<10",
+      "by_action": {
+        "신규처방": {
+          "precision": 0.1288,
+          "recall": 0.2371,
+          "f1": 0.1669,
+          "cases_with_label": 542
+        },
+        "감량": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 51
+        },
+        "증량": {
+          "precision": 0.2414,
+          "recall": 0.0864,
+          "f1": 0.1273,
+          "cases_with_label": 78
+        },
+        "중단": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 260
+        }
+      }
+    },
+    "by_scenario": {
+      "aki_risk": {
+        "n": 1650,
+        "parse_rate": 1.0,
+        "micro_precision": 0.1312,
+        "micro_recall": 0.1527,
+        "micro_f1": 0.1411,
+        "exact_match": 0.1382,
+        "target_recall": null,
+        "target_precision": null,
+        "target_cases": "<10",
+        "by_action": {
+          "신규처방": {
+            "precision": 0.1288,
+            "recall": 0.2371,
+            "f1": 0.1669,
+            "cases_with_label": 542
+          },
+          "감량": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 51
+          },
+          "증량": {
+            "precision": 0.2414,
+            "recall": 0.0864,
+            "f1": 0.1273,
+            "cases_with_label": 78
+          },
+          "중단": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 260
+          }
+        }
+      }
+    }
+  },
+  "new_only": {
+    "overall": {
+      "n": 1650,
+      "parse_rate": 1.0,
+      "micro_precision": 0.1288,
+      "micro_recall": 0.1467,
+      "micro_f1": 0.1372,
+      "exact_match": 0.1394,
+      "target_recall": null,
+      "target_precision": null,
+      "target_cases": "<10",
+      "by_action": {
+        "신규처방": {
+          "precision": 0.1288,
+          "recall": 0.2371,
+          "f1": 0.1669,
+          "cases_with_label": 542
+        },
+        "감량": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 51
+        },
+        "증량": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 78
+        },
+        "중단": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 260
+        }
+      }
+    },
+    "by_scenario": {
+      "aki_risk": {
+        "n": 1650,
+        "parse_rate": 1.0,
+        "micro_precision": 0.1288,
+        "micro_recall": 0.1467,
+        "micro_f1": 0.1372,
+        "exact_match": 0.1394,
+        "target_recall": null,
+        "target_precision": null,
+        "target_cases": "<10",
+        "by_action": {
+          "신규처방": {
+            "precision": 0.1288,
+            "recall": 0.2371,
+            "f1": 0.1669,
+            "cases_with_label": 542
+          },
+          "감량": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 51
+          },
+          "증량": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 78
+          },
+          "중단": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 260
+          }
+        }
+      }
+    }
+  },
+  "empty": {
+    "overall": {
+      "n": 1650,
+      "parse_rate": 1.0,
+      "micro_precision": 0.0,
+      "micro_recall": 0.0,
+      "micro_f1": 0.0,
+      "exact_match": 0.5291,
+      "target_recall": null,
+      "target_precision": null,
+      "target_cases": "<10",
+      "by_action": {
+        "신규처방": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 542
+        },
+        "감량": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 51
+        },
+        "증량": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 78
+        },
+        "중단": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "cases_with_label": 260
+        }
+      }
+    },
+    "by_scenario": {
+      "aki_risk": {
+        "n": 1650,
+        "parse_rate": 1.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "micro_f1": 0.0,
+        "exact_match": 0.5291,
+        "target_recall": null,
+        "target_precision": null,
+        "target_cases": "<10",
+        "by_action": {
+          "신규처방": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 542
+          },
+          "감량": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 51
+          },
+          "증량": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 78
+          },
+          "중단": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "cases_with_label": 260
+          }
+        }
+      }
+    }
+  },
+  "freq_topk_lists": {
+    "aki_risk": [
+      "furosemide"
+    ]
+  },
+  "change_rules": {
+    "aki_risk": {
+      "감량": [],
+      "증량": [
+        "captopril"
+      ],
+      "중단": []
+    }
+  }
+}

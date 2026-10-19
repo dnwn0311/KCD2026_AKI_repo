@@ -1,0 +1,225 @@
+{
+  "design": "팀원 코호트, 입실 48시간 한 시점, 정답은 이후 24시간 안 AKI 관련 약물 처방 변경",
+  "split_version": "split_random",
+  "coverage": {
+    "cohort": 11000,
+    "no_stay_match": "<10",
+    "left_before_window_end": 71,
+    "used": 10927
+  },
+  "samples": {
+    "train": 7633,
+    "val": 1644,
+    "test": 1650
+  },
+  "tier_share": {
+    "train": {
+      "red": 0.083,
+      "yellow": 0.13,
+      "green": 0.787
+    },
+    "val": {
+      "red": 0.078,
+      "yellow": 0.144,
+      "green": 0.777
+    },
+    "test": {
+      "red": 0.087,
+      "yellow": 0.133,
+      "green": 0.78
+    }
+  },
+  "vocab_size": 34,
+  "action_rate": {
+    "신규처방": 0.334,
+    "감량": 0.025,
+    "증량": 0.052,
+    "중단": 0.164
+  },
+  "empty_label_rate": 0.524,
+  "active_aki_drug_rate": 0.831,
+  "action_rate_by_tier": {
+    "red": 0.599,
+    "yellow": 0.532,
+    "green": 0.453
+  },
+  "prompt_chars_mean": 1048,
+  "top_drugs_train": {
+    "신규처방": [
+      [
+        "furosemide",
+        768
+      ],
+      [
+        "vancomycin",
+        516
+      ],
+      [
+        "morphine sulfate",
+        202
+      ],
+      [
+        "albumin",
+        202
+      ],
+      [
+        "famotidine",
+        199
+      ],
+      [
+        "cefepime",
+        198
+      ],
+      [
+        "lisinopril",
+        149
+      ],
+      [
+        "levetiracetam",
+        121
+      ],
+      [
+        "piperacillin-tazobactam",
+        104
+      ],
+      [
+        "captopril",
+        90
+      ]
+    ],
+    "감량": [
+      [
+        "vancomycin",
+        47
+      ],
+      [
+        "levetiracetam",
+        29
+      ],
+      [
+        "furosemide",
+        23
+      ],
+      [
+        "cefepime",
+        18
+      ],
+      [
+        "famotidine",
+        11
+      ],
+      [
+        "tacrolimus",
+        "<10"
+      ],
+      [
+        "piperacillin-tazobactam",
+        "<10"
+      ],
+      [
+        "lisinopril",
+        "<10"
+      ],
+      [
+        "acyclovir",
+        "<10"
+      ],
+      [
+        "ciprofloxacin",
+        "<10"
+      ]
+    ],
+    "증량": [
+      [
+        "vancomycin",
+        110
+      ],
+      [
+        "levetiracetam",
+        64
+      ],
+      [
+        "furosemide",
+        47
+      ],
+      [
+        "captopril",
+        42
+      ],
+      [
+        "gabapentin",
+        27
+      ],
+      [
+        "lisinopril",
+        18
+      ],
+      [
+        "cefepime",
+        15
+      ],
+      [
+        "piperacillin-tazobactam",
+        14
+      ],
+      [
+        "meropenem",
+        "<10"
+      ],
+      [
+        "tacrolimus",
+        "<10"
+      ]
+    ],
+    "중단": [
+      [
+        "vancomycin",
+        447
+      ],
+      [
+        "famotidine",
+        218
+      ],
+      [
+        "cefepime",
+        190
+      ],
+      [
+        "morphine sulfate",
+        120
+      ],
+      [
+        "piperacillin-tazobactam",
+        106
+      ],
+      [
+        "levetiracetam",
+        72
+      ],
+      [
+        "furosemide",
+        63
+      ],
+      [
+        "ciprofloxacin",
+        48
+      ],
+      [
+        "meropenem",
+        39
+      ],
+      [
+        "acyclovir",
+        35
+      ]
+    ]
+  },
+  "kidney_info": {
+    "weight": 0.861,
+    "egfr": 0.982,
+    "urine": 0.739,
+    "intake": 0.861,
+    "dialysis": 0.007
+  },
+  "minutes": 0.5
+}
